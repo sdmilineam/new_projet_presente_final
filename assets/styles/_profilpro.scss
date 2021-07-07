@@ -1,0 +1,57 @@
+#post{
+    width: 100%;
+    height: 10vh;
+    @include flex;
+    background-color: aquamarine;
+}
+
+#post2{
+    width: 100%;
+    height: 70vh;
+    @include flex2;
+    background-color: rgb(92, 104, 100);
+        .bloc-rdv{
+            width: 35%;
+            height: 20vh;
+            background-color: azure;
+            border-radius: 15px;
+            @include flex2($dir:row,$just:space-between,$align:none);
+                .nom_profil{
+                    width: 75%;
+                    height: 100%;
+                    margin-left: 5%;
+
+                    left: 500px;
+                    // @include flex2($dir:row,$just:center,$align:center);
+                        .profilpro{
+                            width: 500px;
+                            height: 13vh;
+                            left: 500px;
+                            .tre{
+                                width: 300px;
+                                height: 0.1vh;
+                                background-color: black;
+                    
+                            }
+                            p{
+                                margin-top: 15px;
+                                font-size: 1em;
+                            }
+                        }
+                }
+                .btn-rdv{
+                    width: 25%;
+                    height: 100%;
+                    @include flex2($dir:row,$just:flex-start,$align:center);
+                    
+                        button{
+                            margin-left: 20px;
+                            width: 100px;
+                            height: 50px;
+                            border-radius: 5%;
+                        }
+
+                }
+        }
+
+}

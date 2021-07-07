@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Beinvenu Votre Profil{% endblock %}
+
+{% block body %}
+       
+    <section id="post2">
+        <div class="bloc-rdv">
+                
+            
+            <div class="nom_profil">
+                    <div class="profilpro">
+                        <div> {{ profil.Titre }} </div>
+                         <div class="tre"></div>
+                        <div> {{ profil.Description }} </div>
+                         <div class="tre"></div>
+                        <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
+                          <div class="tre"></div>
+                        <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
+                         <div class="tre"></div>
+                        <p>Contacte :{{ profil.commentaire}}<p>
+                         <div class="tre"></div>
+                    </div>
+            </div>
+
+            <div class="btn-rdv">
+                   <div class="btn-1">
+                        <a href=""><button >Voir Profil</button></a>
+                    </div>
+            </div>
+            
+        </div>  
+    </section> 
+{% endblock %}

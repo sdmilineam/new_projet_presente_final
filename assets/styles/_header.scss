@@ -1,0 +1,36 @@
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(10, 10, 92);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+        nav{
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            font-style: none;
+                li{
+                    font-size: 1.3em;
+                    color: white;
+                    font-style: none;
+                        a{
+                            list-style: none;
+                            color: white;
+                            text-decoration: none;
+                        }
+                }
+                .btn{
+                    width: 150px;
+                    height: 38px;
+                    border-radius: 20px;
+                }
+        }
+}

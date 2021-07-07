@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProfilProController!{% endblock %}
+
+{% block body %}
+<section id="post">
+        <div>
+            <h2>Recherche Votre Médecine ou spécialise</h2>   
+        </div>
+    </section>
+    
+    <section id="post2">
+{% for profil in profils %}
+        <div class="bloc-rdv">
+                
+            
+            <div class="nom_profil">
+                    <div class="profilpro">
+                        <div> {{ profil.Titre }} </div>
+                         <div class="tre"></div>
+                        <div> {{ profil.Description }} </div>
+                         <div class="tre"></div>
+                        <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
+                          <div class="tre"></div>
+                        <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
+                         <div class="tre"></div>
+                        <p>Contacte :{{ profil.commentaire}}<p>
+                         <div class="tre"></div>
+                    </div>
+            </div>
+
+            <div class="btn-rdv">
+                   <div class="btn-1">
+                         {% if not app.user is same as(profil.author) %}
+                        <a href="{{path('app_affiche_profil', {'id': profil.id})}}"><button >Voir Profil</button></a>
+                        {% else %}
+                        <a href="{{path('app_affiche_profil', {'id': profil.id})}}"><button >Voir Profil</button></a>
+                        <a target="__blank" href="{{ path('app_update_profilpro', {'id': profil.id})}}"><button 
+                        class="btn-2">Miss a Jour</button></a>
+                        {{ include('profil_pro/_delete.html.twig') }}
+                       {% endif %} 
+                    </div>
+            </div>
+            
+        </div>
+ {% endfor %}       
+    </section> 
+{% endblock %}

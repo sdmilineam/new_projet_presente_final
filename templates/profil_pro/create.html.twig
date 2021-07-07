@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Beinvenu Votre Profil{% endblock %}
+
+{% block body %}
+    {{ form_start(form)}}
+    {{ form_widget(form) }}
+    <input type="submit" value="Create Votr Profil">
+    {{ form_end (form) }}
+{% endblock %}
