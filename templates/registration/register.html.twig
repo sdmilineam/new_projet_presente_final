@@ -3,19 +3,27 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
+<section id="form">
+    <div class="form-all">
+        <div class="form-grop">
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.Nom) }}
-        {{ form_row(registrationForm.Prenom) }}
-        {{ form_row(registrationForm.Adresse) }}
-        {{ form_row(registrationForm.Contacte) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+            <h1 class="titre">Register</h1>
 
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+            {{ form_start(registrationForm) }}
+                {{ form_row(registrationForm.email ,{'attr':{'class':'form-control'}}) }}
+                {{ form_row(registrationForm.Nom, {'attr':{'class':'form-control'}}) }}
+                {{ form_row(registrationForm.Prenom, {'attr':{'class':'form-control'}}) }}
+                {{ form_row(registrationForm.Adresse, {'attr':{'class':'form-control'}}) }}
+                {{ form_row(registrationForm.Contacte, {'attr':{'class':'form-control'}}) }}
+                {{ form_row(registrationForm.plainPassword,{'attr':{'class':'form-control'}}, {
+                    label: 'Password'
+                }) }}
+                {{ form_row(registrationForm.agreeTerms,{'attr':{'class':'agee'}}) }}
+
+                <button type="submit" class="btn">Register</button>
+            {{ form_end(registrationForm) }}
+     </div>           
+    </div>
+    
+</section>        
 {% endblock %}

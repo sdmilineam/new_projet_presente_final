@@ -3,8 +3,22 @@
 {% block title %}Beinvenu Votre Profil{% endblock %}
 
 {% block body %}
-    {{ form_start(form)}}
-    {{ form_widget(form) }}
-    <input type="submit" value="Update">
-    {{ form_end (form) }}
+<section id="form">
+    <div class="form-all">
+        <div class="form-grop">
+                {{ form_start(form)}}
+            <div class="label">    
+                {{ form_row(form.Titre,{'attr':{'class':'form-control'}}) }}
+                {{ form_row(form.Description,{'attr':{'class':'form-control'}}) }}
+                {{ form_row(form.CreatAt,{'attr':{'class':'form-control'}}) }}
+                {{ form_row(form.updateAt,{'attr':{'class':'form-control'}}) }}
+                {{ form_row(form.commentaire,{'attr':{'class':'form-control'}}) }}
+            </div>     
+                <input type="submit" value="Update" class="btn">
+                {{ form_end (form) }}
+
+    </div>           
+    </div>
+    
+</section>              
 {% endblock %}

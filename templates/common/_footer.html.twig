@@ -1,18 +1,14 @@
 <footer>
-    <div>
-        <nav>
-                <img src="" alt="">
-                <li><a href="#">Acceuil<a></li>
-            
-                <li><a href="{{path("app_profil_pro")}}">Prendre RDV<a></li>
-                <li><a href="#">Contacte<a></li>
-                {% if not app.user %}
-                    
-                    <a href="{{path("app_login")}}"><button class="btn">Login/Register</button><a>
-                {% else %}
-                    <li><a href="{{path("profil_personel")}}">Profil<a></li>
-                    <a href="{{path("app_logout")}}"><button class="btn">Logout</button><a>
-                {% endif %}        
-    </nav>
+    <div class="footer">
+        <div class="logo">
+            <img src="{{asset('image/logo.png')}}" alt="">
+            <p>Copyrighte by mili</p>
+        </div>
+        <div class="reseau">
+            <h3>Nos Reasaux</h3>
+            <div class="icon">
+                <img class="icon2" src="{{asset('image/icon.png')}}" alt="">
+            </div>
+        </div>
     </div>
 </footer>

@@ -14,18 +14,18 @@
             align-items: center; 
             flex-direction: row;  
                 .image-perso{
-                    width: 15vw;
+                    width: 20vw;
                     height: 50vh;
                     border: solid 1px rgb(53, 50, 50) ;
                     display: flex;
                     justify-content: center;
                     align-items: center; 
-                    flex-direction: column;  
+                    
 
                      .blog-pserso{
                          width: 25vh;
                          height: 25vh;
-                         background-color: royalblue;
+                         margin-right: 35px;
                          border-radius: 50%;
                      
                          
@@ -37,7 +37,7 @@
                      }
                 }
                 .datauser{
-                    width: 80%;
+                    width: 100%;
                     height: 50vh;
                     border: solid 1px rgb(2, 0, 0) ;
                     display: flex;
@@ -45,7 +45,7 @@
                     align-items: center;
                     .datauser2{
                         margin-top: 5%;
-                        margin-left: 10%;
+                        margin-left: 50px;
                         
                         .tre{
                             width: 380px;
@@ -55,18 +55,21 @@
                             margin-top: 10px;
                         }
                         p{
-                            font-family: Arial, Helvetica, sans-serif;
+                            font-family: 'Roboto';
                             font-size: 1.5em;
                         }
                         .bloc-btn{
                             margin-top: 30px;
                             width: 100%;
+                            height: 100%;
                             display: flex;
-                            justify-content: flex-end;
+                            justify-content: space-between;
+                           
+                           
                                 .btn-2{
-                                    width: 130px;
+                                    width: 110px;
                                     height: 35px;
-
+                                    margin-right: 15px;
                                 }
                             
                         }

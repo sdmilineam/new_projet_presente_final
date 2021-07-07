@@ -5,7 +5,7 @@
 {% block body %}
 <section id="post">
         <div>
-            <h2>Recherche Votre Médecine ou spécialise</h2>   
+            <h2>Recherche  Profils Votre Médecine ou Spécialise</h2>   
         </div>
     </section>
     
@@ -16,16 +16,15 @@
             
             <div class="nom_profil">
                     <div class="profilpro">
-                        <div> {{ profil.Titre }} </div>
+                        <h4> {{ profil.Titre }} </h4>
                          <div class="tre"></div>
-                        <div> {{ profil.Description }} </div>
+                        <h4> {{ profil.Description }} </h4>
                          <div class="tre"></div>
                         <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
                           <div class="tre"></div>
                         <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
                          <div class="tre"></div>
                         <p>Contacte :{{ profil.commentaire}}<p>
-                         <div class="tre"></div>
                     </div>
             </div>
             <div class="btn-rdv">

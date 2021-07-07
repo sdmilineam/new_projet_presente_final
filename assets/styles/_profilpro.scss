@@ -2,40 +2,63 @@
     width: 100%;
     height: 10vh;
     @include flex;
-    background-color: aquamarine;
+    background-color: #E8505B;
+        div{
+            width: 100%;
+            height: 100%;
+            @include flex;
+                h2{
+                    font-family: 'Roboto';
+                    font-size: 1.6em;
+                    color: whitesmoke;
+                }
+        }
 }
 
 #post2{
     width: 100%;
     height: 70vh;
-    @include flex2;
-    background-color: rgb(92, 104, 100);
+    @include flex2($dir:column);
+    
+    background-color: wite(92, 104, 100);
         .bloc-rdv{
             width: 35%;
             height: 20vh;
-            background-color: azure;
+            background-color: white;
             border-radius: 15px;
+            margin-top: 2%;
+            border: solid black 1px;
             @include flex2($dir:row,$just:space-between,$align:none);
                 .nom_profil{
                     width: 75%;
-                    height: 100%;
-                    margin-left: 5%;
-
-                    left: 500px;
+                    height: 10%;
+                    margin-left: 50px;
                     // @include flex2($dir:row,$just:center,$align:center);
                         .profilpro{
-                            width: 500px;
-                            height: 13vh;
-                            left: 500px;
+                            width: 300px;
+                            height: 19vh;
+                            @include flex2($dir:column,$just:center,$align:flex-start);
+                            
+                            h4{
+                                font-family: 'Roboto';
+                                color:#0B0754 ;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
+                                font-size: 1em;
+                            }
                             .tre{
                                 width: 300px;
                                 height: 0.1vh;
+                                margin-top: 5px;
+                                margin-bottom: 5px;
                                 background-color: black;
                     
                             }
-                            p{
-                                margin-top: 15px;
-                                font-size: 1em;
+                            p{  
+                               
+                                font-size: 0.8em;
+                                font-family: 'Roboto';
+                                color:#0B0754 ;
                             }
                         }
                 }
@@ -47,8 +70,10 @@
                         button{
                             margin-left: 20px;
                             width: 100px;
-                            height: 50px;
+                            height: 30px;
                             border-radius: 5%;
+                            margin-top: 10px;
+                            border-radius: 10px;
                         }
 
                 }

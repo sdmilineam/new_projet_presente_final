@@ -7,7 +7,7 @@
         <div class="bloc-profil">
             <div class="image-perso">
                 <div class="blog-pserso">
-                    {# <img id ="photo_profil" src="{{ asset('images/uploads/' ~ user.image) | imagine_filter('my_thumb')}}" alt="{{ user.image }}"> #}
+                   <img src="{{asset('image/profile.png')}}" alt="profil_image">
                 </div>    
             </div>
 
@@ -19,14 +19,16 @@
                     <div class="tre"></div>
                     <p>Mail : {{app.user.email}}</p>
                     <div class="tre"></div>
+                    <p>Contacte : {{app.user.Contacte}} <p>
+                        <div class="tre"></div>
                     <p>Adresse : {{app.user.Adresse}} <p>
                     <div class="bloc-btn">
-                        <a target="__blank" href="{{path('app_create_profil', {'id': app.user.id})}}"><button class="btn-2">Create Profil Pro </button></a>
+                        <a target="__blank" href="{{path('app_create_profil', {'id': app.user.id})}}"><button class="btn-2">Create Profil</button></a>
                         <a target="__blank" href="{{ path('app_update_profil',{'id': app.user.id})}}"><button class="btn-2">Modifier</button></a>
                          {{ include('profil_personel/_delete.html.twig') }}
-                    {# {% if is_granted('ROLE_ADMIN') %}
+                    {% if is_granted('ROLE_ADMIN') %}
                         <a target="__blank" href="{{ path('app_admin')}}"><button class="btn-2">Admin</button></a>
-                    {% endif %}    #}
+                    {% endif %}   
                     </div>
                 </div>    
                

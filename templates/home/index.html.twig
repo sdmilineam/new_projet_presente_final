@@ -3,25 +3,31 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<section>
-    <div>
-        <div>
-            <h1></h1>
-            <p></p>
+<section id="home">
+    <div class="home_contenu">
+        <div class="bloc_titre">
+            <h1 class="titre">Rendez-vous & téléconsultation</h1>
+            <h2 class="titre">avec professionals de santé</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus dictum lorem nec euismod. Duis pretium efficitur sem, volutpat posuere tellus ornare nec. Nulla ultrices gravida lorem. Maecenas turpis dolor, hendrerit non tempor sed, pulvinar at erat. Etiam rhoncus elementum sapien eu vehicula. Aliquam consequat nisi id scelerisque placerat. In hac habitasse platea dictumst. Proin in magna ut mauris iaculis aliquam accumsan sed dolor. Fusce vel cursus lectus.</p>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="bloc_img">
+            <img src="{{asset('image/8507.png')}}" class="img_acc">
         </div>
     </div>
 </section>
-<section>
-    <div>
-        <div>
-            <img src="" alt="">
+<section id="home2">
+    <div class="home_contenu2">
+        <div class="titre2">
+            <h3>Trouvez un professionnel de santé</h3>
+            <h3>et prenez rendez-vous en ligne avec </h3>
         </div>
-        <div>
-            <h1></h1>
-            <p></p>
+         <div class="contenu">        
+                <div class="img_2">
+                    <img src="{{asset('image/3568982.png')}}" alt="">
+                </div>
+                <div class="img_text">
+                    <p>Dans notre centre ou par consultation video, consultez un medecin, généraliste, specialiste (dentiste, dermatologiste, gynecologiste, cardiologiste, pediatre, ophthalmologiste...)ou medecin paramédical (thérapeute, orthoptiste, osteopathe, dieticiens...).</p>
+                </div>
         </div>
     </div>
 </section>
