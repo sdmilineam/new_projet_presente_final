@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class DashboardController extends AbstractDashboardController
 {
     /**
-     * @Route("/admin")
+     * @Route("/admin", name="app_admin")
      */
     public function index(): Response
     {
@@ -21,7 +21,7 @@ class DashboardController extends AbstractDashboardController
 
         return $this->redirect($routeBuilder->setController(UserCrudController::class)->generateUrl());
         // you can also redirect to different pages depending on the current user
-        if ('mili@fr.fr' === $this->getUser()->getUsername()) {
+        if ('ROLE_ADMIN' === $this->getUser()->getUsername()) {
             return $this->redirect('app_home');
         }
 

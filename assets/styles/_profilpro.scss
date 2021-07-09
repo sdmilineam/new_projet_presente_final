@@ -2,6 +2,7 @@
     width: 100%;
     height: 10vh;
     @include flex;
+    background-attachment:scroll ;
     background-color: #E8505B;
         div{
             width: 100%;
@@ -17,7 +18,7 @@
 
 #post2{
     width: 100%;
-    height: 70vh;
+    height: auto;
     @include flex2($dir:column);
     
     background-color: wite(92, 104, 100);

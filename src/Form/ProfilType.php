@@ -17,6 +17,7 @@ class ProfilType extends AbstractType
             ->add('CreatAt')
             ->add('updateAt')
             ->add('commentaire')
+            ->add('link')
         ;
     }
 

@@ -36,3 +36,10 @@ security:
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/profilpro/create, roles: ROLE_USER }
+        - { path: ^/profilpro/delete, roles: ROLE_USER }
+        - { path: ^/profilpro/update, roles: ROLE_USER }
+        - { path: ^/profil/delete, roles: ROLE_USER }
+        - { path: ^/profil/create, roles: ROLE_USER }
+        - { path: ^/profil/update, roles: ROLE_USER }
+       
