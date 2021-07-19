@@ -242,7 +242,7 @@ class Profil
     /**
      * @param null|File|\Symfony\Component\HttpFoundation\File\UploadedFile $imageFile
      */
-    public function setImageFile(?File $image = null): void
+    public function setImageFile(?File $imageFile = null): void
     {
         $this->imageFile = $imageFile;
 
