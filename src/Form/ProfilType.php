@@ -6,6 +6,7 @@ use App\Entity\Profil;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\File;
 use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class ProfilType extends AbstractType
@@ -15,16 +16,26 @@ class ProfilType extends AbstractType
         $builder
             ->add('Titre')
             ->add('Description')
-            ->add('CreatAt')
-            ->add('updateAt')
             ->add('commentaire')
             ->add('link')
+
             ->add('imageFile', VichFileType::class, [
                 'required' => false,
                 'allow_delete' => true,
                 'delete_label' => 'remove Photo',
                 'download_uri' => true,
                 'download_label' => 'Download Photo',
+                'asset_helper' => true,
+                'invalid_message' => 'Please, upload a .jpeg or .png file only',
+                'constraints' => [
+                    new File([
+                        'maxSize' => '2000k',
+                        'mimeTypes' => [
+                            'image/jpeg',
+                            'image/png',
+                        ],
+                    ]),
+                ],
             ])
         ;
     }

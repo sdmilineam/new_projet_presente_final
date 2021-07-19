@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ProfilRepository;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -44,16 +45,6 @@ class Profil
     private $author;
 
     /**
-     * @ORM\Column(type="datetime_immutable")
-     */
-    private $CreatAt;
-
-    /**
-     * @ORM\Column(type="datetime_immutable",nullable=true)
-     */
-    private $updateAt;
-
-    /**
      * @ORM\Column(type="text")
      */
     private $commentaire;
@@ -80,6 +71,17 @@ class Profil
      * @var null|File
      */
     private $imageFile;
+
+    /**
+     * @var string A "Y-m-d H:i:s" formatted value
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $CreatAt;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $update_at;
 
     public function __construct()
     {
@@ -135,30 +137,6 @@ class Profil
     public function setAuthor(?User $author): self
     {
         $this->author = $author;
-
-        return $this;
-    }
-
-    public function getCreatAt(): ?\DateTimeImmutable
-    {
-        return $this->CreatAt;
-    }
-
-    public function setCreatAt(\DateTimeImmutable $CreatAt): self
-    {
-        $this->CreatAt = new \DateTimeImmutable();
-
-        return $this;
-    }
-
-    public function getUpdateAt(): ?\DateTimeImmutable
-    {
-        return $this->updateAt;
-    }
-
-    public function setUpdateAt(\DateTimeImmutable $updateAt): self
-    {
-        $this->updateAt = $updateAt;
 
         return $this;
     }
@@ -251,5 +229,46 @@ class Profil
             // otherwise the event listeners won't be called and the file is lost
             $this->updated_at = new \DateTimeImmutable();
         }
+    }
+
+    public function getCreatAt(): ?\DateTimeInterface
+    {
+        return $this->CreatAt;
+    }
+
+    public function setCreatAt(?\DateTimeInterface $CreatAt): self
+    {
+        $this->CreatAt = $CreatAt;
+
+        return $this;
+    }
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function setCreatAtValue()
+    {
+        $this->CreatAt = new \DateTime();
+    }
+
+    public function getUpdateAt(): ?\DateTimeInterface
+    {
+        return $this->update_at;
+    }
+
+    public function setUpdateAt(?\DateTimeInterface $update_at): self
+    {
+        $this->update_at = $update_at;
+
+        return $this;
+    }
+
+    /**
+     * @ORM\PrePersist
+     * @ORM\PreUpdate
+     */
+    public function setUpdateAtValue()
+    {
+        $this->UpdateAt = new \DateTime();
     }
 }
