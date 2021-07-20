@@ -2,35 +2,85 @@ header {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 8vh;
-    background-color: rgb(10, 10, 92);
+    height: 10vh;
+    background-color: white;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
+        .img-logo{
+            width: 250px;
+            height: 100px;
+            margin-left: 10%;
+            margin-top: 20px;
+        
+        }
         nav{
             margin: 0;
             padding: 0;
-            width: 70%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
             display: flex;
+            align-items: center;        
             justify-content: space-around;
-            align-items: center;
             list-style: none;
             font-style: none;
-                li{
-                    font-size: 1.3em;
-                    color: white;
-                    font-style: none;
-                        a{
-                            list-style: none;
-                            color: white;
-                            text-decoration: none;
-                        }
-                }
-                .btn{
+            margin-left: 5%;
+            margin-top: 20px;
+            a{
+                color: #0B0754;
+                text-decoration: none;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                font-weight: 500;
+                text-decoration: none;
+                font-family: 'Roboto';
+            }
+            
+             a:hover {
+                color:  #E8505B;
+            }
+              
+             .btn{
                     width: 150px;
                     height: 38px;
-                    border-radius: 20px;
+                    padding: 10px 25px;
+                    border: 2px solid #0B0754;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 1s ease;
+                    position: relative;
+                    display: inline-block;
+                    
                 }
+                .btn-15 {
+                  background: #0B0754;
+                 color: #fff;
+                 z-index: 1;
+               }
+               .btn-15:after {
+                 position: absolute;
+                 content: "";
+                 width: 0;
+                 height: 100%;
+                 top: 0;
+                 right: 0;
+                 z-index: -1;
+                  background: #fff;
+                 transition: all 1.5s ease;
+               }
+               .btn-15:hover {
+                 color: #0B0754;
+               }
+               .btn-15:hover:after {
+                 left: 0;
+                 width: 100%;
+               }
+               .btn-15:active {
+                 top: 2px;
+               }   
+                
+               
         }
 }

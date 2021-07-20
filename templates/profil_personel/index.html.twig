@@ -23,11 +23,11 @@
                         <div class="tre"></div>
                     <p>Adresse : {{app.user.Adresse}} <p>
                     <div class="bloc-btn">
-                        <a target="__blank" href="{{path('app_create_profil', {'id': app.user.id})}}"><button class="btn-2">Create Profil</button></a>
-                        <a target="__blank" href="{{ path('app_update_profil',{'id': app.user.id})}}"><button class="btn-2">Modifier</button></a>
+                        <a target="__blank" href="{{path('app_create_profil', {'id': app.user.id})}}"><button class="btn-2 btn-1">Create Profil</button></a>
+                        <a target="__blank" href="{{ path('app_update_profil',{'id': app.user.id})}}"><button class="btn-2 btn-1">Modifier</button></a>
                          {{ include('profil_personel/_delete.html.twig') }}
                     {% if is_granted('ROLE_ADMIN') %}
-                        <a target="__blank" href="{{ path('app_admin')}}"><button class="btn-2">Admin</button></a>
+                        <a target="__blank" href="{{ path('app_admin')}}"><button class="btn-2 btn-1">Admin</button></a>
                     {% endif %}   
                     </div>
                 </div>    

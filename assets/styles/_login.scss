@@ -62,8 +62,61 @@
                 }
                 .btn{
                     width: 150px;
-                    height: 30px;
+                    height: 40px;
                     margin-top: 20px;
+                    @include flex;
+                }
+                .btn-4 {
+                    position: relative;
+                    color: rgb(10, 10, 92);
+                    z-index: 2;
+                    line-height: 40px;
+                    padding: 0;
+                  }
+                  .btn-4:hover{
+                    border: none;
+                  }
+                  .btn-4:before,
+                  .btn-4:after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 0%;
+                    border: 2px solid;
+                    z-index: -1;
+                    transition: all 0.3s ease;
+                  }
+                  .btn-4:before {
+                    top: 0;
+                     left: 0;
+                     border-bottom-color: transparent;
+                     border-right-color: transparent;
+                     border-top-color: rgb(10, 10, 92);
+                     border-left-color: rgb(10, 10, 92);
+                  }
+                  .btn-4:after{
+                     bottom: 0;
+                     right: 0;
+                     border-top-color: transparent;
+                     border-left-color: transparent;
+                     border-bottom-color: rgb(10, 10, 92);
+                     border-right-color: rgb(10, 10, 92);
+                  }
+                  .btn-4:hover:before,
+                  .btn-4:hover:after {
+                    border-color: rgb(10, 10, 92);
+                    height: 100%;
+                    width: 100%;
+                  }
+                .btn-2{
+                    transition: all 0.3 ease;
+                }
+                .btn-2:hover{
+                    box-shadow: 
+                    -7px -7px 20px 0px #fff9,
+                    -4px -4px 5px 0px #fff,
+                    7px 7px 20px 0px #0002,
+                    4px 4px 5px 0px #0001;
                 }
             }
 

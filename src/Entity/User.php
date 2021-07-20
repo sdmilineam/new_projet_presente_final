@@ -41,17 +41,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Profil::class, mappedBy="author")
-     */
-    private $profils;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=Profil::class, inversedBy="comment")
+     * @ORM\ManyToOne(targetEntity=Profil::class, inversedBy="comment", cascade={"remove"})
      */
     private $profil;
 
     /**
-     * @ORM\OneToMany(targetEntity=Commentaire::class, mappedBy="Article")
+     * @ORM\OneToMany(targetEntity=Commentaire::class, mappedBy="Article" ,cascade={"remove"})
      */
     private $commentaires;
 
@@ -75,10 +70,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $Contacte;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Profil::class, mappedBy="user", orphanRemoval=true)
+     */
+    private $author;
+
     public function __construct()
     {
         $this->profils = new ArrayCollection();
         $this->commentaires = new ArrayCollection();
+        $this->author = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -286,6 +287,36 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setContacte(string $Contacte): self
     {
         $this->Contacte = $Contacte;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Profil[]
+     */
+    public function getAuthor(): Collection
+    {
+        return $this->author;
+    }
+
+    public function addAuthor(Profil $author): self
+    {
+        if (!$this->author->contains($author)) {
+            $this->author[] = $author;
+            $author->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAuthor(Profil $author): self
+    {
+        if ($this->author->removeElement($author)) {
+            // set the owning side to null (unless already changed)
+            if ($author->getUser() === $this) {
+                $author->setUser(null);
+            }
+        }
 
         return $this;
     }

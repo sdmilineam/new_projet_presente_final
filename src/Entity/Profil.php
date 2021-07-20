@@ -5,7 +5,6 @@ namespace App\Entity;
 use App\Repository\ProfilRepository;
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
@@ -40,19 +39,9 @@ class Profil
     private $media;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="profils")
-     */
-    private $author;
-
-    /**
      * @ORM\Column(type="text")
      */
     private $commentaire;
-
-    /**
-     * @ORM\OneToMany(targetEntity=user::class, mappedBy="profil")
-     */
-    private $comment;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -82,6 +71,12 @@ class Profil
      * @ORM\Column(type="datetime", nullable=true)
      */
     private $update_at;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="author")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $user;
 
     public function __construct()
     {
@@ -129,18 +124,6 @@ class Profil
         return $this;
     }
 
-    public function getAuthor(): ?User
-    {
-        return $this->author;
-    }
-
-    public function setAuthor(?User $author): self
-    {
-        $this->author = $author;
-
-        return $this;
-    }
-
     public function getCommentaire(): ?string
     {
         return $this->commentaire;
@@ -149,36 +132,6 @@ class Profil
     public function setCommentaire(string $commentaire): self
     {
         $this->commentaire = $commentaire;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|user[]
-     */
-    public function getComment(): Collection
-    {
-        return $this->comment;
-    }
-
-    public function addComment(user $comment): self
-    {
-        if (!$this->comment->contains($comment)) {
-            $this->comment[] = $comment;
-            $comment->setProfil($this);
-        }
-
-        return $this;
-    }
-
-    public function removeComment(user $comment): self
-    {
-        if ($this->comment->removeElement($comment)) {
-            // set the owning side to null (unless already changed)
-            if ($comment->getProfil() === $this) {
-                $comment->setProfil(null);
-            }
-        }
 
         return $this;
     }
@@ -270,5 +223,17 @@ class Profil
     public function setUpdateAtValue()
     {
         $this->UpdateAt = new \DateTime();
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
+
+        return $this;
     }
 }
