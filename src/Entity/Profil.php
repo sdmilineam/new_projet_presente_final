@@ -55,7 +55,7 @@ class Profil
 
     /**
      *  @Vich\UploadableField(mapping="image", fileNameProperty="image")
-     *
+     * 
      * 
      *
      * @var null|File
