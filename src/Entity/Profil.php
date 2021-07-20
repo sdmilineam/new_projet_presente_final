@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\ProfilRepository;
 use DateTime;
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ProfilRepository;
 use Symfony\Component\HttpFoundation\File\File;
+use Doctrine\Common\Collections\ArrayCollection;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
@@ -55,7 +55,8 @@ class Profil
 
     /**
      *  @Vich\UploadableField(mapping="image", fileNameProperty="image")
-     * @ORM\Column(type="string", length=255)
+     *
+     * 
      *
      * @var null|File
      */
@@ -171,6 +172,7 @@ class Profil
     }
 
     /**
+     *
      * @param null|File|\Symfony\Component\HttpFoundation\File\UploadedFile $imageFile
      */
     public function setImageFile(?File $imageFile = null): void

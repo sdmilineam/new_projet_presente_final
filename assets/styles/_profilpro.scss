@@ -19,7 +19,7 @@
 
 #post2{
     width: 100%;
-    height: 50vh;
+    height: auto;
     @include flex;
     flex-direction: column;
     background-color: wite(92, 104, 100);

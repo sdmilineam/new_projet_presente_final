@@ -81,7 +81,7 @@ class ProfilProController extends AbstractController
     public function Edite(profil $profil, EntityManagerInterface $em, Security $security, Request $request): Response
     {
         $user = $this->security->getUser();
-        if ($user === $profil->getAuthor()) {
+        if ($user === $profil->getUser()) {
             $form = $this->createForm(ProfilType::class, $profil);
             $form->handleRequest($request);
 
@@ -104,7 +104,7 @@ class ProfilProController extends AbstractController
     public function delete(profil $profil, Request $request): Response
     {
         $user = $this->security->getUser();
-        if ($user === $profil->getAuthor()) {
+        if ($user === $profil->getUser()) {
             if ($this->isCsrfTokenValid('delete'.$profil->getId(), $request->request->get('csrf_token'))) {
                 $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->remove($profil);
