@@ -46,10 +46,9 @@ class ProfilProController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user = $this->security->getUser();
-            $profil->setAuthor($user);
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($profil);
-            $entityManager->flush();
+            $profil->setUser($user);
+            $em->persist($profil);
+            $em->flush();
 
             $this->addFlash('success', 'Your __Profil__ has been created successfully.');
 

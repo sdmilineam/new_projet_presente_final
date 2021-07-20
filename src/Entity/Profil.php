@@ -74,7 +74,7 @@ class Profil
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="author")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn
      */
     private $user;
 

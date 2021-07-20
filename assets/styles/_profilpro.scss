@@ -19,11 +19,17 @@
 
 #post2{
     width: 100%;
-    height: auto;
+    height: 50vh;
     @include flex;
     flex-direction: column;
-    
     background-color: wite(92, 104, 100);
+    article{
+        width: 100%;
+        height: auto;
+        @include flex;
+        flex-direction: column;
+        background-color: white;
+
         .bloc-rdv{
             width: 35%;
             height: 20vh;
@@ -85,5 +91,8 @@
 
                 }
         }
+
+    }
+      
 
 }

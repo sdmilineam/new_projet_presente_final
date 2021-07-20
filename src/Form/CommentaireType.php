@@ -15,7 +15,7 @@ class CommentaireType extends AbstractType
             ->add('Content')
             ->add('CreatAt')
             ->add('Article')
-            ->add('Author')
+
         ;
     }
 
