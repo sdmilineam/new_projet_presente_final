@@ -23,7 +23,6 @@
     @include flex;
     flex-direction: column;
     background-color: wite(92, 104, 100);
-    article{
         width: 100%;
         height: auto;
         @include flex;
@@ -92,7 +91,7 @@
                 }
         }
 
-    }
+
       
 
 }
