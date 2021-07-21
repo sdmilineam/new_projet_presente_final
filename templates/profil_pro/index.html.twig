@@ -10,38 +10,40 @@
     </section>
     
     <section id="post2">
-{% for profil in profils %}
-        <div class="bloc-rdv">
-            <div class="nom_profil">
-                    <div class="pro-img">
-                        <img src="{{asset('uploads/image/' ~ profil.image)}}" alt="image" class="img-pro">
+    <article> 
+            {% for profil in profils %}
+                    <div class="bloc-rdv">
+                        <div class="nom_profil">
+                                <div class="pro-img">
+                                    <img src="{{asset('uploads/image/' ~ profil.image)}}" alt="image" class="img-pro">
+                                </div>
+                                <div class="profilpro">
+                                    <h4> {{ profil.Titre }} </h4>
+                                    <div class="tre"></div>
+                                    <h4> {{ profil.Description }} </h4>
+                                    <div class="tre"></div>
+                                    <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
+                                    <div class="tre"></div>
+                                    <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
+                                    <div class="tre"></div>
+                                    <p>Contacte :{{ profil.commentaire}}<p>
+                                </div>
+                        </div>
+                        <div class="btn-rdv">
+                            <div class="btn-1">
+                                    {% if not app.user is same as(profil.user) %}
+                                    <a href="{{path('app_affiche_profil', {'id': profil.id})}}"><button >Voir Profil</button></a>
+                                    {% else %}
+                                    <a href="{{path('app_affiche_profil', {'id': profil.id})}}"><button >Voir Profil</button></a>
+                                    <a target="__blank" href="{{ path('app_update_profilpro', {'id': profil.id})}}"><button 
+                                    class="btn-2">Miss a Jour</button></a>
+                                    {{ include('profil_pro/_delete.html.twig') }}
+                                {% endif %} 
+                                </div>
+                        </div>
+                        
                     </div>
-                    <div class="profilpro">
-                        <h4> {{ profil.Titre }} </h4>
-                         <div class="tre"></div>
-                        <h4> {{ profil.Description }} </h4>
-                         <div class="tre"></div>
-                        <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
-                          <div class="tre"></div>
-                        <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
-                         <div class="tre"></div>
-                        <p>Contacte :{{ profil.commentaire}}<p>
-                    </div>
-            </div>
-            <div class="btn-rdv">
-                   <div class="btn-1">
-                         {% if not app.user is same as(profil.user) %}
-                        <a href="{{path('app_affiche_profil', {'id': profil.id})}}"><button >Voir Profil</button></a>
-                        {% else %}
-                        <a href="{{path('app_affiche_profil', {'id': profil.id})}}"><button >Voir Profil</button></a>
-                        <a target="__blank" href="{{ path('app_update_profilpro', {'id': profil.id})}}"><button 
-                        class="btn-2">Miss a Jour</button></a>
-                        {{ include('profil_pro/_delete.html.twig') }}
-                       {% endif %} 
-                    </div>
-            </div>
-            
-        </div>
- {% endfor %}       
+            {% endfor %}      
+            </article>   
     </section> 
 {% endblock %}
