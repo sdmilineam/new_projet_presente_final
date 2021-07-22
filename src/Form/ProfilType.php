@@ -20,7 +20,12 @@ class ProfilType extends AbstractType
             ->add('link')
 
             ->add('imageFile', VichFileType::class, [
-            
+                'required' => true,
+                'allow_delete' => true,
+                'delete_label' => 'Delete',
+                'download_uri' => false,
+                'download_label' => '',
+                'asset_helper' => true,
                 'invalid_message' => 'Please, upload a .jpeg or .png file only',
                 'constraints' => [
                     new File([

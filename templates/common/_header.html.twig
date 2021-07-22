@@ -2,16 +2,16 @@
 <header>
     <img src="{{asset('image/logo.png')}}" alt="logo" class="img-logo">
     <nav class="navMenu">
-        <a class="a1" href="{{path("app_home")}}">Acceuil<a>
+        <a class="a1" href="{{path("app_home")}}" class="a">Acceuil<a>
       
-        <a class="a2"href="{{path("app_profil_pro")}}">Prendre RDV<a>
+        <a class="a2"href="{{path("app_profil_pro")}}" class="a">Prendre RDV<a>
         <div class="dot"></div>
     {% if not app.user %}
         
-        <a href="{{path("app_login")}}"><button class="btn btn-15">Login/Register</button><a>
+        <a href="{{path("app_login")}}"  class="a"><button class="btn btn-15">Login/Register</button><a>
     {% else %}
-        <a href="{{path("profil_personel")}}">Profil<a>
-        <a href="{{path("app_logout")}}"><button class="btn  btn-15">Logout</button><a>
+        <a href="{{path("profil_personel")}}" class="a">Profil<a>
+        <a href="{{path("app_logout")}}"  class="a"><button class="btn  btn-15">Logout</button><a>
     {% endif %}        
      
     </nav>
