@@ -18,12 +18,15 @@ class ProfilType extends AbstractType
             ->add('Description')
             ->add('NiveauEtude')
             ->add('link')
+            ->add('contacte')
+            ->add('adresse')
+            
 
             ->add('imageFile', VichFileType::class, [
-                'required' => true,
+                'required' => false,
                 'allow_delete' => true,
-                'delete_label' => 'Delete',
-                'download_uri' => false,
+                'delete_label' => 'Confimer Votre Profil',
+                'download_uri' => true,
                 'download_label' => '',
                 'asset_helper' => true,
                 'invalid_message' => 'Please, upload a .jpeg or .png file only',

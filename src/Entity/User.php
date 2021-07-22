@@ -56,12 +56,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $Prenom;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255,  nullable=true)
      */
     private $Adresse;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $Contacte;
 
@@ -69,6 +69,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\OneToMany(targetEntity=Profil::class, mappedBy="user", orphanRemoval=true)
      */
     private $author;
+
+    /**
+     * @var string A "Y-m-d H:i:s" formatted value
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $CreatAt;
+
+   
 
     public function __construct()
     {
@@ -262,15 +270,24 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function removeAuthor(Profil $author): self
+    public function getCreatAt(): ?\DateTimeInterface
     {
-        if ($this->author->removeElement($author)) {
-            // set the owning side to null (unless already changed)
-            if ($author->getUser() === $this) {
-                $author->setUser(null);
-            }
-        }
+        return $this->CreatAt;
+    }
+
+    public function setCreatAt(?\DateTimeInterface $CreatAt): self
+    {
+        $this->CreatAt = $CreatAt;
 
         return $this;
     }
+    
+    /**
+     * @ORM\PrePersist
+     */
+    public function setCreatAtValue()
+    {
+        $this->CreatAt = new \DateTime();
+    }
+    
 }

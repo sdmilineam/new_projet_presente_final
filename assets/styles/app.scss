@@ -11,7 +11,11 @@
 @import "_mediaquery";
 
 
-
+a{
+    list-style: none;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');

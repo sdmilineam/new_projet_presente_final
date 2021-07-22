@@ -22,6 +22,8 @@
                     <p>Contacte : {{app.user.Contacte}} <p>
                         <div class="tre"></div>
                     <p>Adresse : {{app.user.Adresse}} <p>
+                    <div class="tre"></div>
+                    <p>CreatAt : {{app.user.CreatAt|date("m/d/Y")}} <p>
                     <div class="bloc-btn">
                         <a target="__blank" href="{{path('app_create_profil', {'id': app.user.id})}}"><button class="btn-2 btn-1">Create Profil</button></a>
                         <a target="__blank" href="{{ path('app_update_profil',{'id': app.user.id})}}"><button class="btn-2 btn-1">Modifier</button></a>

@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #affiche{
     width: 100%;
     height: 10vh;
@@ -20,7 +24,7 @@
     width: 100vw;
     height: 70vh;
     margin-top: 30px;
-
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,6 +34,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-right: 11%;
             .img-affiche{
                 width: 40%;
                 height: 100%;
@@ -48,6 +53,7 @@
                                     img{
                                         width: 100%;
                                         height: 100%;
+                                         border-radius: 50%;
                                     }
                             }
                     }
@@ -65,18 +71,30 @@
                                 margin-top: 15px;
                                 span{
                                     margin-right: 80px;
+                                    margin-top: 3px;
+
                                 }
-                                a{
-                                    list-style: none;
-                                    font-family: 'Roboto';
-                                    text-decoration: none;
+                                p{  
+                                    margin-left: 40px; 
+                                    margin-top: -22px;
+
+                                    a{
+                                        list-style: none;
+                                        font-family: 'Roboto';
+                                        text-decoration: none;
+                                        margin-top: - 30px;
+                                        margin-left: 10px; 
+                                           
+                                    }
                                 }
+                                
                                 .tre{
                                     width: 100%;
                                     height: 2px;
                                     background-color: #0B0754;
                                     margin-right: 10px;
                                     margin-bottom: 10px;
+                                  
                                 }
                                
                             }
@@ -84,8 +102,53 @@
             }
             .info-affiche{
                 width: 60%;
-                height: 100%;
-                background-color: brown;
+                height: 101%;
+                border: 1px solid #0B0754;
+                border-radius: 10px;
+                margin-top: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    .pro-affiche{
+                        width: 90%;
+                        height: 90%;
+
+                        h5{
+                            font-size: 1.5em;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 400;
+                                span.titre{
+                                    margin-left: 100px;
+                                    font-weight: 100px;
+                                    color: #E8505B;
+                                }
+                        }
+                        .des{
+                            width: 94%;
+                            height: 18%;
+                            border: 1px solid black;
+                            padding: 20px;
+                            font-size: 1.2em;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 200;
+                        }
+                        p{
+                            font-size: 1.2em;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 200;
+                            margin-bottom: 5px;
+                        }
+                        .tre{
+                            width: 100%;
+                            height: 2px;
+                            background-color: #0B0754;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                           
+                          
+                        }
+                    }
             }
         }
         

@@ -18,6 +18,14 @@
                     {{form_label(form.Description) }}
                     {{ form_widget(form.Description,{'attr':{'class':'form-control'}}) }}
                 </div> 
+                  <div>
+                    {{ form_label(form.contacte, 'Votre Contacte') }}
+                    {{ form_widget(form.contacte,{'attr':{'class':'form-control'}}) }}
+                </div>
+                 <div>
+                    {{ form_label(form.adresse, 'Votre Adresse') }}
+                    {{ form_widget(form.adresse,{'attr':{'class':'form-control'}}) }}
+                </div>
                 <div>
                     {{ form_label(form.NiveauEtude, 'Votre Diplome') }}
                     {{ form_widget(form.NiveauEtude,{'attr':{'class':'form-control'}}) }}

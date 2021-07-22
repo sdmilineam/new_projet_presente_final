@@ -72,6 +72,16 @@ class Profil
      */
     private $user;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $contacte;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $adresse;
+
     public function __construct()
     {
         $this->comment = new ArrayCollection();
@@ -215,6 +225,30 @@ class Profil
     public function setUser(?User $user): self
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    public function getContacte(): ?string
+    {
+        return $this->contacte;
+    }
+
+    public function setContacte(?string $contacte): self
+    {
+        $this->contacte = $contacte;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?string
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(?string $adresse): self
+    {
+        $this->adresse = $adresse;
 
         return $this;
     }

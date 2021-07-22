@@ -18,39 +18,36 @@
                     </div>
                     <div class="link">
                          <div>
-                            <span class="fas fa-link fa-2x"> : </span>
-                                <a href="{{profil.link}}" target="__blank">{{profil.link}}</a>
+                            <span class="fas fa-link fa-2x"></span>
+                               <p>Rendez-Vous : <a href="{{profil.link}}" rel="stylesheet">{{profil.link}}</a></p> 
                             <div class="tre"></div>
-                            <span class="fab fa-facebook fa-2x"> : </span> 
+                            <span class="fab fa-facebook fa-2x"></span> 
                                 
                             <div class="tre"></div>
-                            <span class="fab fa-twitter fa-2x"> : </span>
+                            <span class="fab fa-twitter fa-2x"></span>
                             
                             <div class="tre"></div>
-                            <span class="fab fa-linkedin fa-2x"> : </span>
+                            <span class="fab fa-linkedin fa-2x"></span>
 
                         </div>    
                     </div>
              </div>   
             <div class="info-affiche">
-
-            </div>
-            {# <div class="nom_profil">
-                    <div class="profilpro">
-                        <div> {{ profil.Titre }} </div>
+                    <div class="pro-affiche">
+                        <h5>Nom et Prenom <span class="titre">{{ profil.Titre }}</span> </h5>
                          <div class="tre"></div>
-                        <div> {{ profil.Description }} </div>
+                        <p>Description : <p>  
+                        <p class="des">{{ profil.Description }}</p>
                          <div class="tre"></div>
-                        <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
+                        <p>Profil Create le : {{ profil.CreatAt|date("m/d/Y") }}<p>
                           <div class="tre"></div>
-                        <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
+                        <p>Dernier Mise a jour : {{ profil.UpdateAt|date("m/d/Y") }}<p>
                          <div class="tre"></div>
-                        <p>Niveau Etude :{{ profil.NiveauEtude}}<p>
+                        <p>Niveau Etude : <p>  
+                        <p class="des"><span>{{ profil.NiveauEtude}}</span><p>
                          <div class="tre"></div>
                     </div>
-                    <a href="{{profil.link}}" target="__blank">Lien</a>
-            </div> #}
-            
+            </div>
         </div>  
     </section> 
 {% endblock %}
