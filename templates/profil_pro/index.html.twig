@@ -19,12 +19,13 @@
                                 <div class="info-pro">
                                     <h4> {{ profil.Titre }} </h4>
                                     <div class="tre"></div>
-                                    <p>Profil Create le :{{ profil.CreatAt|date("m/d/Y") }}<p>
+                                    <p>Profil Create le : {{ profil.CreatAt|date("m/d/Y") }}<p>
                                     <div class="tre"></div>
-                                    <p>Dernier Mise a jour :{{ profil.UpdateAt|date("m/d/Y") }}<p>
+                                    <p>Dernier Mise a jour : {{ profil.UpdateAt|date("m/d/Y") }}<p>
                                     <div class="tre"></div>
-                                    <p>Contacte :{{ profil.commentaire}}<p>
+                                    <p>Contacte : {{ app.user.Contacte}}<p>
                                     <div class="tre"></div>
+                                    <p>Contacte : {{ app.user.Adresse}}<p>
                                 </div>
                                 <div class="btn-proprofil">
                                     <div class="btn">

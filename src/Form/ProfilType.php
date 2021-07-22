@@ -16,7 +16,7 @@ class ProfilType extends AbstractType
         $builder
             ->add('Titre')
             ->add('Description')
-            ->add('commentaire')
+            ->add('NiveauEtude')
             ->add('link')
 
             ->add('imageFile', VichFileType::class, [

@@ -36,7 +36,7 @@ class Profil
     /**
      * @ORM\Column(type="text")
      */
-    private $commentaire;
+    private $NiveauEtude;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -106,14 +106,14 @@ class Profil
         return $this;
     }
 
-    public function getCommentaire(): ?string
+    public function getNiveauEtude(): ?string
     {
-        return $this->commentaire;
+        return $this->NiveauEtude;
     }
 
-    public function setCommentaire(string $commentaire): self
+    public function setNiveauEtude(string $NiveauEtude): self
     {
-        $this->commentaire = $commentaire;
+        $this->NiveauEtude = $NiveauEtude;
 
         return $this;
     }
