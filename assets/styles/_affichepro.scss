@@ -1,0 +1,92 @@
+#affiche{
+    width: 100%;
+    height: 10vh;
+    @include flex;
+    margin-top: 40px;
+    background-attachment:scroll ;
+    background-color: #E8505B;
+        div{
+            width: 100%;
+            height: 100%;
+            @include flex;
+                h2{
+                    font-family: 'Roboto';
+                    font-size: 1.6em;
+                    color: whitesmoke;
+                }
+        }
+}
+#affiche-body{
+    width: 100vw;
+    height: 70vh;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        .bloc-affiche{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-affiche{
+                width: 40%;
+                height: 100%;
+                margin-right: 20px;
+                    .bloc-img{
+                        width: 100%;
+                        height: 60%;
+                        border: 1px solid #0B0754;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        @include flex;
+                            div{
+                                width: 65%;
+                                height: 85%;
+                                border-radius: 50%;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                            }
+                    }
+                    .link{
+                        width:100% ;
+                        height: 39%;
+                        margin-top: 10px;
+                        border: 1px solid #0B0754;
+                        border-radius: 10px;
+                            div{
+                                width: 80%;
+                                height: 10%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 15px;
+                                span{
+                                    margin-right: 80px;
+                                }
+                                a{
+                                    list-style: none;
+                                    font-family: 'Roboto';
+                                    text-decoration: none;
+                                }
+                                .tre{
+                                    width: 80%;
+                                    height: 2px;
+                                    background-color: #0B0754;
+                                    margin-right: 10px;
+                                    margin-bottom: 10px;
+                                }
+                               
+                            }
+                    }
+            }
+            .info-affiche{
+                width: 60%;
+                height: 100%;
+                background-color: brown;
+            }
+        }
+        
+}

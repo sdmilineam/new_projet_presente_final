@@ -3,12 +3,39 @@
 {% block title %}Beinvenu Votre Profil{% endblock %}
 
 {% block body %}
-       
-    <section id="post2">
-        <div class="bloc-rdv">
-                
-            
-            <div class="nom_profil">
+     <section id="affiche">
+        <div>
+            <h2>Beinvenu Sur Mon Profils</h2>   
+        </div>
+    </section>  
+    <section id="affiche-body">
+        <div class="bloc-affiche">
+             <div class="img-affiche">
+                    <div class="bloc-img">
+                        <div>
+                             <img src="{{asset('uploads/image/' ~ profil.image)}}" alt="image" >
+                        </div>
+                    </div>
+                    <div class="link">
+                         <div>
+                            <span class="fas fa-link fa-2x"> : </span>
+                            <a href="{{profil.link}}" target="__blank">{{profil.link}}</a>
+                            <div class="tre"></div>
+                            <span class="fab fa-facebook fa-2x"> : </span> 
+                            <a href="{{profil.link}}" target="__blank">{{profil.link}}</a>
+                            <div class="tre"></div>
+                            <span class="fab fa-twitter fa-2x"> : </span>
+                            <a href="{{profil.link}}" target="__blank">{{profil.link}}</a>
+                            <div class="tre"></div>
+                            <span class="fab fa-linkedin fa-2x"> : </span>
+                            <a href="{{profil.link}}" target="__blank">{{profil.link}}</a>
+                        </div>    
+                    </div>
+             </div>   
+            <div class="info-affiche">
+
+            </div>
+            {# <div class="nom_profil">
                     <div class="profilpro">
                         <div> {{ profil.Titre }} </div>
                          <div class="tre"></div>
@@ -22,7 +49,7 @@
                          <div class="tre"></div>
                     </div>
                     <a href="{{profil.link}}" target="__blank">Lien</a>
-            </div>
+            </div> #}
             
         </div>  
     </section> 

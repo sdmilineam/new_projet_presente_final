@@ -12,7 +12,5 @@ import './styles/app.scss';
 import './bootstrap';
 
 
-// require jQuery normally
-const $ = require('./jquery.js');
-// create global $ and jQuery variables
-global.$ = global.jQuery = $;
+// // require jQuery normally
+// const $ = require('./jquery.js');

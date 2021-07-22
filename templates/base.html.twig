@@ -17,6 +17,7 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            {{ encore_entry_script_tags('responsive') }}
         {% endblock %}
 
     </head>
@@ -28,6 +29,7 @@
 
          {{include("common/_footer.html.twig")}}  
         <script src="{{asset('libre/jquery-3.6.0.min.js') }}"></script>
-        <script src="{{asset('js/script.js') }}"></script>
+        {# // <script type="text/javascript"> console.log('ok')</script> #}
+        <script src="{{asset("js/script.js") }}"></script>
     </body>
 </html>
