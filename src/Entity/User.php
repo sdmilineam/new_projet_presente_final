@@ -41,11 +41,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $password;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Profil::class, inversedBy="comment", cascade={"remove"})
-     */
-    private $profil;
-
-    /**
      * @ORM\OneToMany(targetEntity=Commentaire::class, mappedBy="Article" ,cascade={"remove"})
      */
     private $commentaires;
@@ -169,48 +164,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
-    }
-
-    /**
-     * @return Collection|Profil[]
-     */
-    public function getProfils(): Collection
-    {
-        return $this->profils;
-    }
-
-    public function addProfil(Profil $profil): self
-    {
-        if (!$this->profils->contains($profil)) {
-            $this->profils[] = $profil;
-            $profil->setAuthor($this);
-        }
-
-        return $this;
-    }
-
-    public function removeProfil(Profil $profil): self
-    {
-        if ($this->profils->removeElement($profil)) {
-            // set the owning side to null (unless already changed)
-            if ($profil->getAuthor() === $this) {
-                $profil->setAuthor(null);
-            }
-        }
-
-        return $this;
-    }
-
-    public function getProfil(): ?Profil
-    {
-        return $this->profil;
-    }
-
-    public function setProfil(?Profil $profil): self
-    {
-        $this->profil = $profil;
-
-        return $this;
     }
 
     /**

@@ -2,6 +2,9 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Profil;
+use App\Entity\User;
+use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,5 +31,12 @@ class DashboardController extends AbstractDashboardController
         // you can also render some template to display a proper Dashboard
         // (tip: it's easier if your template extends from @EasyAdmin/page/content.html.twig)
         return $this->render('some/path/my-dashboard.html.twig');
+    }
+
+    public function configureMenuItems(): iterable
+    {
+        yield MenuItem::linktoDashboard(' Dashboard', 'fa fa-home');
+        yield MenuItem::linkToCrud('User', 'fas fa-users', User::class);
+        yield MenuItem::linkToCrud('Profil', 'fas fa-user-circle', Profil::class);
     }
 }

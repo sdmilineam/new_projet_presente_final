@@ -34,11 +34,6 @@ class Profil
     private $Description;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $media;
-
-    /**
      * @ORM\Column(type="text")
      */
     private $commentaire;
@@ -107,18 +102,6 @@ class Profil
     public function setDescription(string $Description): self
     {
         $this->Description = $Description;
-
-        return $this;
-    }
-
-    public function getMedia(): ?string
-    {
-        return $this->media;
-    }
-
-    public function setMedia(?string $media): self
-    {
-        $this->media = $media;
 
         return $this;
     }
