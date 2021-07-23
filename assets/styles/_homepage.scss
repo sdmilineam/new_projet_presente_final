@@ -11,14 +11,15 @@
             justify-content: space-between;
             align-items: center;
                 .bloc_titre{
-                    width: 30%;
+                    width: 35%;
                     height: 50%;
                     margin-top: 10%;
                     .titre{
                         font-family: 'Roboto';
-                        font-size: 2em;
+                        font-size: 1em;
                         color: #0B0754;
                         margin-top: 5px;
+                        width: 100%;
                     }
                     .text{
                         
@@ -128,7 +129,7 @@
                         }
                         .text{
                             
-                            width: 25vw;
+                            width: 26vw;
                             margin-top: 20px;
                             color: #0B0754;
                             font-family: 'Roboto';
