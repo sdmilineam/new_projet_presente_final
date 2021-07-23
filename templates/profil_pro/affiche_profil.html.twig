@@ -18,17 +18,25 @@
                     </div>
                     <div class="link">
                          <div>
-                            <span class="fas fa-link fa-2x"></span>
-                               <p>Rendez-Vous : <a href="{{profil.link}}" rel="stylesheet">{{profil.link}}</a></p> 
+                            <div class="fb">
+                                <span class="fas fa-link fa-2x" classe="fas"></span>
+                                <a href="{{profil.link}}" target="_blank" rel="stylesheet">{{profil.link}}</a>
+                            </div>
                             <div class="tre"></div>
-                            <span class="fab fa-facebook fa-2x"></span> 
-                                
+                            <div class="fb">
+                                <span class="fab fa-github fa-2x" ></span> 
+                                <p>@sdmilineam</p>
+                            </div>    
                             <div class="tre"></div>
-                            <span class="fab fa-twitter fa-2x"></span>
-                            
+                            <div class="fb">
+                                <span class="fab fa-twitter fa-2x"></span>
+                                <p>@sdmilineam</p>
+                            </div>
                             <div class="tre"></div>
-                            <span class="fab fa-linkedin fa-2x"></span>
-
+                            <div class="fb">
+                                <span class="fab fa-linkedin fa-2x"></span>
+                                <p>@duong-milineam-sorn</p>
+                            </div>
                         </div>    
                     </div>
              </div>   
@@ -46,6 +54,15 @@
                         <p>Niveau Etude : <p>  
                         <p class="des"><span>{{ profil.NiveauEtude}}</span><p>
                          <div class="tre"></div>
+                    </div>
+                    <div class="btn">
+                         {% if app.user is same as(profil.user) %}
+                            <form>
+                                <button class="btn-2" formaction="{{ path('app_update_profilpro', {'id': profil.id})}}">Mise à jour</button>
+                            </form>
+                            {{ include('profil_pro/_delete.html.twig') }}
+                        {% endif %}
+                            
                     </div>
             </div>
         </div>  
