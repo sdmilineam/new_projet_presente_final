@@ -378,125 +378,125 @@ header {
 
       }
 }
-@media screen and (max-width: 2560px){
-  header {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: white;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    margin-top: 15px;
+// @media screen and (max-width: 2560px){
+//   header {
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     height: 10vh;
+//     background-color: white;
+//     display: flex;
+//     justify-content:space-around;
+//     align-items: center;
+//     margin-top: 15px;
     
    
-        .img-logo{
-            width: 250px;
-            height: 100px;
-            margin-left: 25%;
-            margin-top: 20px;
-            cursor: pointer;
+//         .img-logo{
+//             width: 250px;
+//             height: 100px;
+//             margin-left: 25%;
+//             margin-top: 20px;
+//             cursor: pointer;
         
-        }
-        nav{
-            margin: 0;
-            padding: 0;
-            width: 70%;
-            height: 50%;
-            display: flex;
-            align-items: center;        
-            justify-content: flex-end;
-            list-style: none;
-            font-style: none;
-            margin-left: 5%;
-            margin-top: 20px;
-            #burger{
-              cursor: pointer;
-              display: none;
-              padding: 0 1rem;
-              position: relative;
-            }
-            #cross{
-              cursor: pointer;
-              // display: none;
-              padding: 0 1rem;
-              position: relative;
-            }
-            ul{
-              width: 55%;
-              height: 100%;
-              display: flex;
-              justify-content: space-around;
-              align-items: center;
+//         }
+//         nav{
+//             margin: 0;
+//             padding: 0;
+//             width: 70%;
+//             height: 50%;
+//             display: flex;
+//             align-items: center;        
+//             justify-content: flex-end;
+//             list-style: none;
+//             font-style: none;
+//             margin-left: 5%;
+//             margin-top: 20px;
+//             #burger{
+//               cursor: pointer;
+//               display: none;
+//               padding: 0 1rem;
+//               position: relative;
+//             }
+//             #cross{
+//               cursor: pointer;
+//               // display: none;
+//               padding: 0 1rem;
+//               position: relative;
+//             }
+//             ul{
+//               width: 55%;
+//               height: 100%;
+//               display: flex;
+//               justify-content: space-around;
+//               align-items: center;
              
-              li{
-                list-style: none;
-                cursor: pointer;
-                a{
-                    color: #0B0754;
-                    text-decoration: none;
-                    font-size: 1.5em;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    text-decoration: none;
-                    font-family: 'Roboto';
-                }
+//               li{
+//                 list-style: none;
+//                 cursor: pointer;
+//                 a{
+//                     color: #0B0754;
+//                     text-decoration: none;
+//                     font-size: 1.5em;
+//                     text-transform: uppercase;
+//                     font-weight: 500;
+//                     text-decoration: none;
+//                     font-family: 'Roboto';
+//                 }
                 
-                a:hover {
-                    color:  #E8505B;
-                }
+//                 a:hover {
+//                     color:  #E8505B;
+//                 }
                 
-              }
-            }
+//               }
+//             }
            
             
            
             
               
-             .btn{
-                    width: 250px;
-                    height: 45px;
-                    padding: 5px 25px;
-                    border: 2px solid #0B0754;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: 500;
-                    font-size: 1em;
-                    background: transparent;
-                    cursor: pointer;
-                    transition: all 1s ease;
-                    position: relative;
-                    display: inline-block;
+//              .btn{
+//                     width: 250px;
+//                     height: 45px;
+//                     padding: 5px 25px;
+//                     border: 2px solid #0B0754;
+//                     font-family: 'Roboto', sans-serif;
+//                     font-weight: 500;
+//                     font-size: 1em;
+//                     background: transparent;
+//                     cursor: pointer;
+//                     transition: all 1s ease;
+//                     position: relative;
+//                     display: inline-block;
                     
-                }
-                .btn-15 {
-                  background: #0B0754;
-                 color: #fff;
-                 z-index: 1;
-               }
-               .btn-15:after {
-                 position: absolute;
-                 content: "";
-                 width: 0;
-                 height: 100%;
-                 top: 0;
-                 right: 0;
-                 z-index: -1;
-                  background: #fff;
-                 transition: all 1.5s ease;
-               }
-               .btn-15:hover {
-                 color: #0B0754;
-               }
-               .btn-15:hover:after {
-                 left: 0;
-                 width: 100%;
-               }
-               .btn-15:active {
-                 top: 2px;
-               }   
+//                 }
+//                 .btn-15 {
+//                   background: #0B0754;
+//                  color: #fff;
+//                  z-index: 1;
+//                }
+//                .btn-15:after {
+//                  position: absolute;
+//                  content: "";
+//                  width: 0;
+//                  height: 100%;
+//                  top: 0;
+//                  right: 0;
+//                  z-index: -1;
+//                   background: #fff;
+//                  transition: all 1.5s ease;
+//                }
+//                .btn-15:hover {
+//                  color: #0B0754;
+//                }
+//                .btn-15:hover:after {
+//                  left: 0;
+//                  width: 100%;
+//                }
+//                .btn-15:active {
+//                  top: 2px;
+//                }   
                 
                
-        }
-  }
-}  
+//         }
+//   }
+// }  
