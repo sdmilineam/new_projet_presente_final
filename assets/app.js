@@ -12,5 +12,4 @@ import './styles/app.scss';
 import './bootstrap';
 
 
-// // require jQuery normally
-// const $ = require('./jquery.js');
+
