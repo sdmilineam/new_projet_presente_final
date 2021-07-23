@@ -14,6 +14,11 @@
                     <div class="bloc-img">
                         <div>
                              <img src="{{asset('uploads/image/' ~ profil.image)}}" alt="image" >
+                             <div>
+                                <p>{{profil.user.Nom}} {{profil.user.Prenom}}</p>
+                                <h3>{{profil.user.email}}</h3>
+                             </div>
+                             
                         </div>
                     </div>
                     <div class="link">
@@ -42,7 +47,7 @@
              </div>   
             <div class="info-affiche">
                     <div class="pro-affiche">
-                        <h5>Nom et Prenom <span class="titre">{{ profil.Titre }}</span> </h5>
+                        <h5>Titre : <span class="titre">{{ profil.Titre }}</span> </h5>
                          <div class="tre"></div>
                         <p>Description : <p>  
                         <p class="des">{{ profil.Description }}</p>
@@ -53,10 +58,11 @@
                          <div class="tre"></div>
                         <p>Niveau Etude : <p>  
                         <p class="des"><span>{{ profil.NiveauEtude}}</span><p>
+                    {% if app.user is same as(profil.user) %}    
                          <div class="tre"></div>
                     </div>
                     <div class="btn">
-                         {% if app.user is same as(profil.user) %}
+                         
                             <form>
                                 <button class="btn-2" formaction="{{ path('app_update_profilpro', {'id': profil.id})}}">Mise à jour</button>
                             </form>

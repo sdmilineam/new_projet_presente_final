@@ -57,6 +57,26 @@
                                          border-radius: 50%;
                                          margin-top: 20px;
                                     }
+                                    div{  
+                                       width: 100%;
+                                       height: 30%;
+                                       @include flex;
+                                       flex-direction: column;
+                                       p{
+                                            list-style: none;
+                                            font-family: 'Roboto';
+                                            text-decoration: none;
+                                            font-size:1.3em;
+                                            text-transform: uppercase;
+                                            margin-bottom: 5px;
+                                       }
+                                       h3{
+                                        font-family: 'Roboto';
+                                        text-decoration: none;
+                                        font-size:1.3em;
+                                        
+                                       }
+                                    }
                             }
                     }
                     .link{
