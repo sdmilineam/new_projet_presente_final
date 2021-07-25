@@ -48,7 +48,7 @@ footer{
     }  
 
 }
-@media screen and (max-width:2560px){
+@media screen and (max-width:1920px){
     footer{
         width: 100%;
         height: 30vh;
@@ -67,15 +67,15 @@ footer{
                     
                     flex-direction: column;
                      img{
-                         width: 350px;
-                         height: 130px;
+                         width: 250px;
+                         height: 100px;
                      }
                      p{
                         font-family: 'Roboto';
-                        font-size: 1.8em;
+                        font-size: 1.2em;
                         margin-left:5% ;
                         color: white;
-                        margin-top: 1%;
+                        margin-top: 3%;
                      }
                 }
                 .reseau{
@@ -87,14 +87,14 @@ footer{
                         h3{
                             height: 50%;
                             font-family: 'Roboto';
-                            font-size: 2em;
+                            font-size: 1.4em;
                             color: white;
                         }
                         .icon{
                             height: 50%;
                             @include flex($align:flex-start);
                              .icon2{
-                                    width: 100%;
+                                    width: 70%;
                                 }
                         }
                         
@@ -121,8 +121,8 @@ footer{
                     
                     flex-direction: column;
                      img{
-                         width: 350px;
-                         height: 125px;
+                         width: 250px;
+                         height: 100px;
                      }
                      p{
                         font-family: 'Roboto';
@@ -154,6 +154,57 @@ footer{
             }  
         }
     }
+@media screen and (max-width:1080px){
+        footer{
+            width: 100%;
+            height: 25vh;
+            background-color:#0B0754 ;
+            margin-top: 50px;
+            @include flex;
+            .footer{
+                width: 80%;
+                height: 80%;
+                @include flex($just:space-between);
+                    .logo{
+                        width: 34%;
+                        height: 100%;
+                        @include flex;
+                        
+                        flex-direction: column;
+                         img{
+                             width: 200px;
+                             height: 80px;
+                         }
+                         p{
+                            font-family: 'Roboto';
+                            font-size: 1.1em;
+                            color: white;
+                         }
+                    }
+                    .reseau{
+                        width:34% ;
+                        height: 55%;
+                        @include flex($just:space-between);
+                        flex-direction: column;
+                            h3{
+                                height: 50%;
+                                font-family: 'Roboto';
+                                font-size: 1.2em;
+                                color: white;
+                            }
+                            .icon{
+                                height: 50%;
+                                @include flex($align:flex-start);
+                                 .icon2{
+                                        width: 75%;
+                                    }
+                            }
+                            
+                    }
+                }  
+            }
+        }
+           
 @media screen and (max-width:768px){
     footer{
         width: 100%;
