@@ -135,8 +135,8 @@
             margin-top:5% ;
     
             .bloc-rdv{
-                width: 40%;
-                height: 25vh;
+                width: 60%;
+                height: 30vh;
                 background-color: white;
                 border-radius: 15px;
                 border: solid black 1px;
@@ -325,6 +325,668 @@
                                         7px 7px 20px 0px #0002,
                                         4px 4px 5px 0px #0001;
                                     }
+                                }
+                                    
+                               
+                                   
+                                 
+                        }
+    
+            }
+    
+        }
+          
+    
+    }
+}
+@media screen and(max-width:1080px){
+    #post2{
+        width: 100%;
+        height: 70vh;
+        @include flex;
+        flex-direction: column;
+        background-color: wite(92, 104, 100);
+        article{
+            width: 100%;
+            height: auto;
+            @include flex;
+            flex-direction: column;
+            background-color: white;
+            margin-top:5% ;
+    
+            .bloc-rdv{
+                width: 75%;
+                height: 20vh;
+                background-color: white;
+                border-radius: 15px;
+                border: solid black 1px;
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                margin-bottom:5% ;
+                        .img-pro{
+                            width:25% ;
+                            height:15vh ;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            img{
+                                width: 140px;
+                                height: 140px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .info-pro{
+                            width: 40%;
+                            height: 20vh;  
+                            display: flex;
+                            justify-content:center;
+                            align-items: flex-start; 
+                            flex-direction: column;
+                                h4{
+                                    font-family: 'Roboto';
+                                    font-size: 1.3em;
+                                    
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-size: 1em;
+                                }
+                                .tre{
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: black;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                        }
+                        .btn-proprofil{
+                            width: 30%;
+                            height: 15vh;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center; 
+                            flex-direction: column;
+                                form{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content:center;
+                                    align-items: center; 
+                                    button{
+                                        width: 130px;
+                                        height: 30px;
+                                        margin-bottom: 15px;
+                                        background: transparent;
+                                        cursor: pointer;
+                                        transition: all 0.3s ease;
+                                        // position: relative;
+                                        // display: inline-block;
+                                        transition: all 0.3s ease;
+                                        border: 1px solid rgb(10, 10, 92);
+
+                                    }
+                                    .btn-2{
+                                        transition: all 0.3 ease;
+                                    }
+                                    .btn-2:hover{
+                                        box-shadow: 
+                                        -7px -7px 20px 0px #fff9,
+                                        -4px -4px 5px 0px #fff,
+                                        7px 7px 20px 0px #0002,
+                                        4px 4px 5px 0px #0001;
+                                    }
+                                }
+                                    
+                               
+                                   
+                                 
+                        }
+    
+            }
+    
+        }
+          
+    
+    }
+}
+@media screen and(max-width:768px){
+    #post{
+        width: 100%;
+        height: 10vh;
+        @include flex;
+        margin-top: 30px;
+        background-attachment:scroll ;
+        background-color: #E8505B;
+            div{
+                width: 100%;
+                height: 100%;
+                @include flex;
+                    h2{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        color: whitesmoke;
+                    }
+            }
+    }
+    
+    #post2{
+        width: 100%;
+        height: 70vh;
+        @include flex;
+        flex-direction: column;
+        background-color: wite(92, 104, 100);
+        article{
+            width: 100%;
+            height: auto;
+            @include flex;
+            flex-direction: column;
+            background-color: white;
+            margin-top:5% ;
+    
+            .bloc-rdv{
+                width: 85%;
+                height: 20vh;
+                background-color: white;
+                border-radius: 15px;
+                border: solid black 1px;
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                margin-bottom:5% ;
+                        .img-pro{
+                            width:25% ;
+                            height:15vh ;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            img{
+                                width: 140px;
+                                height: 140px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .info-pro{
+                            width: 38%;
+                            height: 20vh;  
+                            display: flex;
+                            justify-content:center;
+                            align-items: flex-start; 
+                            flex-direction: column;
+                                h4{
+                                    font-family: 'Roboto';
+                                    font-size: 1.3em;
+                                    
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-size: 1em;
+                                }
+                                .tre{
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: black;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                        }
+                        .btn-proprofil{
+                            width: 25%;
+                            height: 15vh;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center; 
+                            flex-direction: column;
+                            margin-right: 5%;
+                            .btn{
+                              
+                                    
+                                    button{
+                                        width: 130px;
+                                        height: 30px;
+                                        margin-bottom: 15px;
+                                        background: transparent;
+                                        cursor: pointer;
+                                        transition: all 0.3s ease;
+                                        // position: relative;
+                                        // display: inline-block;
+                                        transition: all 0.3s ease;
+                                        border: 1px solid rgb(10, 10, 92);
+                                        
+
+                                    }
+                                    .btn-2{
+                                        transition: all 0.3 ease;
+                                    }
+                                    .btn-2:hover{
+                                        box-shadow: 
+                                        -7px -7px 20px 0px #fff9,
+                                        -4px -4px 5px 0px #fff,
+                                        7px 7px 20px 0px #0002,
+                                        4px 4px 5px 0px #0001;
+                                    }
+                                }
+                                    
+                               
+                                   
+                                 
+                        }
+    
+            }
+    
+        }
+          
+    
+    }
+}
+@media screen and(max-width:600px){
+    #post{
+        width: 100%;
+        height: 10vh;
+        @include flex;
+        margin-top: 30px;
+        background-attachment:scroll ;
+        background-color: #E8505B;
+            div{
+                width: 100%;
+                height: 100%;
+                @include flex;
+                    h2{
+                        font-family: 'Roboto';
+                        font-size: 1em;
+                        color: whitesmoke;
+                    }
+            }
+    }
+    
+    #post2{
+        width: 100%;
+        height: auto;
+        @include flex;
+        flex-direction: column;
+        background-color: wite(92, 104, 100);
+        article{
+            width: 100%;
+            height: auto;
+            @include flex;
+            flex-direction: column;
+            background-color: white;
+            margin-top:5% ;
+    
+            .bloc-rdv{
+                width: 85%;
+                height: 45vh;
+                background-color: white;
+                border-radius: 15px;
+                border: solid black 1px;
+                display: flex;
+                justify-content:space-around;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom:5% ;
+                        .img-pro{
+                            width:25% ;
+                            height:20vh ;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            img{
+                                width: 120px;
+                                height: 120px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .info-pro{
+                            width: 80%;
+                            height: 20vh;  
+                            display: flex;
+                            justify-content:center;
+                            align-items: flex-start; 
+                            flex-direction: column;
+                                h4{
+                                    font-family: 'Roboto';
+                                    font-size: 1.2em;
+                                    margin-left: 38%;
+                                   
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-size: 0.8em;
+                                }
+                                .tre{
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: black;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                        }
+                        .btn-proprofil{
+                            width: 50%;
+                            height: 15vh;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center; 
+                                .btn{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content:center;
+                                    align-items: center; 
+                                    margin-left: 25%;
+                                    form{
+                                        width: 80% ;
+                                        display: flex;
+                                        justify-content:center;
+                                        align-items: center; 
+
+                                        button{
+                                            width: 100px;
+                                            height: 30px;
+                                            background: transparent;
+                                            cursor: pointer;
+                                            transition: all 0.3s ease;
+                                            position: relative;
+                                            display: inline-block;
+                                            transition: all 0.3s ease;
+                                            border: 1px solid rgb(10, 10, 92);
+                                            margin-left: -3%;
+                                            
+                                            
+    
+                                        }
+                                        .btn-2{
+                                            transition: all 0.3 ease;
+                                        }
+                                        .btn-2:hover{
+                                            box-shadow: 
+                                            -7px -7px 20px 0px #fff9,
+                                            -4px -4px 5px 0px #fff,
+                                            7px 7px 20px 0px #0002,
+                                            4px 4px 5px 0px #0001;
+                                        }
+                                    }   
+                                    
+                                }
+                                    
+                               
+                                   
+                                 
+                        }
+    
+            }
+    
+        }
+          
+    
+    }
+}
+@media screen and(max-width:375px){
+    #post{
+        width: 100%;
+        height: 10vh;
+        @include flex;
+        margin-top: 30px;
+        background-attachment:scroll ;
+        background-color: #E8505B;
+            div{
+                width: 100%;
+                height: 100%;
+                @include flex;
+                    h2{
+                        font-family: 'Roboto';
+                        font-size: 0.9em;
+                        color: whitesmoke;
+                    }
+            }
+    }
+    
+    #post2{
+        width: 100%;
+        height: auto;
+        @include flex;
+        flex-direction: column;
+        background-color: wite(92, 104, 100);
+        article{
+            width: 100%;
+            height: auto;
+            @include flex;
+            flex-direction: column;
+            background-color: white;
+            margin-top:5% ;
+    
+            .bloc-rdv{
+                width: 85%;
+                height: 45vh;
+                background-color: white;
+                border-radius: 15px;
+                border: solid black 1px;
+                display: flex;
+                justify-content:space-around;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom:5% ;
+                        .img-pro{
+                            width:25% ;
+                            height:20vh ;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            img{
+                                width: 120px;
+                                height: 120px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .info-pro{
+                            width: 80%;
+                            height: 20vh;  
+                            display: flex;
+                            justify-content:center;
+                            align-items: flex-start; 
+                            flex-direction: column;
+                                h4{
+                                    font-family: 'Roboto';
+                                    font-size: 1.2em;
+                                    margin-left: 38%;
+                                   
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-size: 0.8em;
+                                }
+                                .tre{
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: black;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                        }
+                        .btn-proprofil{
+                            width: 50%;
+                            height: 15vh;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center; 
+                                .btn{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content:center;
+                                    align-items: center; 
+                                    margin-left: 25%;
+                                    form{
+                                        width: 80% ;
+                                        display: flex;
+                                        justify-content:center;
+                                        align-items: center; 
+
+                                        button{
+                                            width: 100px;
+                                            height: 30px;
+                                            background: transparent;
+                                            cursor: pointer;
+                                            transition: all 0.3s ease;
+                                            position: relative;
+                                            display: inline-block;
+                                            transition: all 0.3s ease;
+                                            border: 1px solid rgb(10, 10, 92);
+                                            margin-left: -3%;
+                                            
+                                            
+    
+                                        }
+                                        .btn-2{
+                                            transition: all 0.3 ease;
+                                        }
+                                        .btn-2:hover{
+                                            box-shadow: 
+                                            -7px -7px 20px 0px #fff9,
+                                            -4px -4px 5px 0px #fff,
+                                            7px 7px 20px 0px #0002,
+                                            4px 4px 5px 0px #0001;
+                                        }
+                                    }   
+                                    
+                                }
+                                    
+                               
+                                   
+                                 
+                        }
+    
+            }
+    
+        }
+          
+    
+    }
+}
+@media screen and(max-width:325px){
+    #post{
+        width: 100%;
+        height: 10vh;
+        @include flex;
+        margin-top: 30px;
+        background-attachment:scroll ;
+        background-color: #E8505B;
+            div{
+                width: 100%;
+                height: 100%;
+                @include flex;
+                    h2{
+                        font-family: 'Roboto';
+                        font-size: 0.8em;
+                        color: whitesmoke;
+                    }
+            }
+    }
+    
+    #post2{
+        width: 100%;
+        height: auto;
+        @include flex;
+        flex-direction: column;
+        background-color: wite(92, 104, 100);
+        article{
+            width: 100%;
+            height: auto;
+            @include flex;
+            flex-direction: column;
+            background-color: white;
+            margin-top:5% ;
+    
+            .bloc-rdv{
+                width: 85%;
+                height: 45vh;
+                background-color: white;
+                border-radius: 15px;
+                border: solid black 1px;
+                display: flex;
+                justify-content:space-around;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom:5% ;
+                        .img-pro{
+                            width:25% ;
+                            height:20vh ;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            img{
+                                width: 120px;
+                                height: 120px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .info-pro{
+                            width: 80%;
+                            height: 20vh;  
+                            display: flex;
+                            justify-content:center;
+                            align-items: flex-start; 
+                            flex-direction: column;
+                                h4{
+                                    font-family: 'Roboto';
+                                    font-size: 1.2em;
+                                    margin-left: 38%;
+                                   
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-size: 0.8em;
+                                }
+                                .tre{
+                                    width: 100%;
+                                    height: 1px;
+                                    background-color: black;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                        }
+                        .btn-proprofil{
+                            width: 50%;
+                            height: 15vh;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center; 
+                                .btn{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content:center;
+                                    align-items: center; 
+                                    margin-left: 25%;
+                                    form{
+                                        width: 80% ;
+                                        display: flex;
+                                        justify-content:center;
+                                        align-items: center; 
+
+                                        button{
+                                            width: 100px;
+                                            height: 30px;
+                                            background: transparent;
+                                            cursor: pointer;
+                                            transition: all 0.3s ease;
+                                            position: relative;
+                                            display: inline-block;
+                                            transition: all 0.3s ease;
+                                            border: 1px solid rgb(10, 10, 92);
+                                            margin-left: -3%;
+                                            
+                                            
+    
+                                        }
+                                        .btn-2{
+                                            transition: all 0.3 ease;
+                                        }
+                                        .btn-2:hover{
+                                            box-shadow: 
+                                            -7px -7px 20px 0px #fff9,
+                                            -4px -4px 5px 0px #fff,
+                                            7px 7px 20px 0px #0002,
+                                            4px 4px 5px 0px #0001;
+                                        }
+                                    }   
+                                    
                                 }
                                     
                                
