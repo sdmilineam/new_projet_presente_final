@@ -26,7 +26,7 @@
     margin-top: 30px;
     
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
         .bloc-affiche{
             width: 70%;
@@ -34,7 +34,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 11%;
             .img-affiche{
                 width: 40%;
                 height: 100%;
@@ -133,7 +132,7 @@
                 border-radius: 10px;
                 margin-top: 6px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
                     .pro-affiche{
@@ -211,4 +210,816 @@
             }
         }
         
+}
+@media screen and(max-width:1920px){
+    #affiche-body{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .bloc-affiche{
+                width: 75%;
+                height: 85vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-affiche{
+                    width: 40%;
+                    height: 100%;
+                    margin-right: 20px;
+                        .bloc-img{
+                            width: 100%;
+                            height: 60%;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                            margin-bottom: 10px;
+                            @include flex;
+                            justify-content: space-around;
+                                div{
+                                    width: 90%;
+                                    height: 90%;
+                                    border-radius: 50%;
+                                    @include flex;
+                                    flex-direction: column;
+                                        img{
+                                            width: 50%;
+                                            height: 60%;
+                                             border-radius: 50%;
+                                             margin-top: 20px;
+                                        }
+                                        div{  
+                                           width: 100%;
+                                           height: 30%;
+                                           @include flex;
+                                           flex-direction: column;
+                                           p{
+                                                list-style: none;
+                                                font-family: 'Roboto';
+                                                text-decoration: none;
+                                                font-size:1.3em;
+                                                text-transform: uppercase;
+                                                margin-bottom: 5px;
+                                           }
+                                           h3{
+                                            font-family: 'Roboto';
+                                            text-decoration: none;
+                                            font-size:1.3em;
+                                            
+                                           }
+                                        }
+                                }
+                        }
+                        .link{
+                            width:100% ;
+                            height: 39%;
+                            margin-top: 10px;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                                div{
+                                    width: 80%;
+                                    height: 10%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: 30px;
+                                    span{
+                                        margin-right: 75px;
+                                        
+    
+                                    }
+                                    .fb{
+                                        @include flex;
+                                        margin-top: 5px;
+                                        margin-bottom: 5px;
+                                        width: 420px;
+                                        height: 20px;
+                                        justify-content: flex-start;
+                                        
+                                    }
+                                   
+                                    a{
+                                        list-style: none;
+                                        font-family: 'Roboto';
+                                        text-decoration: none;
+                                            
+                                    }
+                                    
+                                    .tre{
+                                        width: 100%;
+                                        height: 2px;
+                                        background-color: #0B0754;
+                                        margin-right: 10px;
+                                        margin-bottom: 20px;
+                                        margin-top: 20px;
+                                      
+                                    }
+                                   
+                                }
+                        }
+                }
+                .info-affiche{
+                    width: 60%;
+                    height: 101%;
+                    border: 1px solid #0B0754;
+                    border-radius: 10px;
+                    margin-top: 6px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                        .pro-affiche{
+                            width: 90%;
+                            height: 90%;
+                            margin-top: 40px;
+                            h5{
+                                font-size: 1.5em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                    span.titre{
+                                        margin-left: 100px;
+                                        font-weight: 100px;
+                                        color: #E8505B;
+                                    }
+                            }
+                            .des{
+                                width: 94%;
+                                height: 18%;
+                                border: 1px solid black;
+                                padding: 20px;
+                                font-size: 1.2em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-top: 5px;
+                            }
+                            p{
+                                font-size: 1.2em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-bottom: 5px;
+                                margin-top: 10px;
+                                
+                            }
+                            .tre{
+                                width: 100%;
+                                height: 2px;
+                                background-color: #0B0754;
+                                margin-right: 10px;
+                                
+                                margin-top: 10px;
+                               
+                              
+                            }
+                        }
+                        .btn{
+                            width: 70%;
+                            height: 10%;
+                            @include flex;
+                            margin-bottom: 25px;
+                            form{
+                                width: 100%;
+                                height: 100%;
+                                @include flex;
+                                justify-content: space-around;
+                                button{
+                                    margin-left: 0px;
+                                    width: 200px;
+                                    height: 40px;
+                                    margin-bottom: 15px;
+                                    background: transparent;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    position: relative;
+                                    display: inline-block;
+                                    transition: all 0.3s ease;
+                                    border: 1px solid rgb(10, 10, 92);
+                                }
+                                .btn-2{
+                                    transition: all 0.3 ease;
+                                }
+                                .btn-2:hover{
+                                    box-shadow: 
+                                    -7px -7px 20px 0px #fff9,
+                                    -4px -4px 5px 0px #fff,
+                                    7px 7px 20px 0px #0002,
+                                    4px 4px 5px 0px #0001;
+                                }
+                            }
+                               
+                        }
+                }
+            }
+            
+    }
+}
+@media screen and(max-width:1440px){
+    #affiche-body{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .bloc-affiche{
+                width: 75%;
+                height: 75vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .img-affiche{
+                    width: 40%;
+                    height: 100%;
+                    margin-right: 20px;
+                        .bloc-img{
+                            width: 100%;
+                            height: 60%;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                            margin-bottom: 10px;
+                            @include flex;
+                            justify-content: space-around;
+                                div{
+                                    width: 90%;
+                                    height: 90%;
+                                    border-radius: 50%;
+                                    @include flex;
+                                    flex-direction: column;
+                                        img{
+                                            width: 55%;
+                                            height: 60%;
+                                             border-radius: 50%;
+                                             margin-top: 20px;
+                                        }
+                                        div{  
+                                           width: 100%;
+                                           height: 30%;
+                                           @include flex;
+                                           flex-direction: column;
+                                           p{
+                                                list-style: none;
+                                                font-family: 'Roboto';
+                                                text-decoration: none;
+                                                font-size:1.3em;
+                                                text-transform: uppercase;
+                                                margin-bottom: 5px;
+                                           }
+                                           h3{
+                                            font-family: 'Roboto';
+                                            text-decoration: none;
+                                            font-size:1.3em;
+                                            
+                                           }
+                                        }
+                                }
+                        }
+                        .link{
+                            width:100% ;
+                            height: 39%;
+                            margin-top: 10px;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                                div{
+                                    width: 80%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: 30px;
+                                    span{
+                                        margin-right: 75px;
+                                        
+    
+                                    }
+                                    .fb{
+                                        @include flex;
+                                        margin-top: 5px;
+                                        margin-bottom: 5px;
+                                        width: 420px;
+                                        height: 20px;
+                                        justify-content: flex-start;
+                                        
+                                    }
+                                   
+                                    a{
+                                        list-style: none;
+                                        font-family: 'Roboto';
+                                        text-decoration: none;
+                                            
+                                    }
+                                    
+                                    .tre{
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: #0B0754;
+                                        margin-right: 10px;
+                                        margin-bottom: 5%;
+                                        margin-top: 5%;
+                                      
+                                    }
+                                   
+                                }
+                        }
+                }
+                .info-affiche{
+                    width: 60%;
+                    height: 101%;
+                    border: 1px solid #0B0754;
+                    border-radius: 10px;
+                    margin-top: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                        .pro-affiche{
+                            width: 90%;
+                            height: 90%;
+                            margin-top: 40px;
+                            h5{
+                                font-size: 1.5em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                    span.titre{
+                                        margin-left: 100px;
+                                        font-weight: 100px;
+                                        color: #E8505B;
+                                    }
+                            }
+                            .des{
+                                width: 94%;
+                                height: 18%;
+                                border: 1px solid black;
+                                padding: 20px;
+                                font-size: 1.2em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-top: 5px;
+                            }
+                            p{
+                                font-size: 1.2em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-bottom: 5px;
+                                margin-top: 10px;
+                                
+                            }
+                            .tre{
+                                width: 100%;
+                                height: 2px;
+                                background-color: #0B0754;
+                                margin-right: 10px;
+                                
+                                margin-top: 10px;
+                               
+                              
+                            }
+                        }
+                        .btn{
+                            width: 70%;
+                            height: 10%;
+                            @include flex;
+                            margin-bottom: 25px;
+                            form{
+                                width: 100%;
+                                height: 100%;
+                                @include flex;
+                                justify-content: space-around;
+                                margin-top: 10%;
+                                button{
+                                    margin-left: 0px;
+                                    width: 130px;
+                                    height: 35px;
+                                    margin-bottom: 15px;
+                                    background: transparent;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    position: relative;
+                                    display: inline-block;
+                                    transition: all 0.3s ease;
+                                    border: 1px solid rgb(10, 10, 92);
+                                }
+                                .btn-2{
+                                    transition: all 0.3 ease;
+                                }
+                                .btn-2:hover{
+                                    box-shadow: 
+                                    -7px -7px 20px 0px #fff9,
+                                    -4px -4px 5px 0px #fff,
+                                    7px 7px 20px 0px #0002,
+                                    4px 4px 5px 0px #0001;
+                                }
+                            }
+                                
+                        }
+                }
+            }
+            
+    }
+}
+@media screen and(max-width:1080px){
+    #affiche-body{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .bloc-affiche{
+                width: 85%;
+                height: 72vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-affiche{
+                    width: 40%;
+                    height: 100%;
+                    margin-right: 20px;
+                        .bloc-img{
+                            width: 100%;
+                            height: 60%;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                            margin-bottom: 10px;
+                            @include flex;
+                            justify-content: space-around;
+                                div{
+                                    width: 90%;
+                                    height: 90%;
+                                    border-radius: 50%;
+                                    @include flex;
+                                    flex-direction: column;
+                                        img{
+                                            width: 50%;
+                                            height: 50%;
+                                             border-radius: 50%;
+                                             margin-top: 20px;
+                                        }
+                                        div{  
+                                           width: 100%;
+                                           height: 30%;
+                                           @include flex;
+                                           flex-direction: column;
+                                           p{
+                                                list-style: none;
+                                                font-family: 'Roboto';
+                                                text-decoration: none;
+                                                font-size:1.3em;
+                                                text-transform: uppercase;
+                                                margin-bottom: 5px;
+                                           }
+                                           h3{
+                                            font-family: 'Roboto';
+                                            text-decoration: none;
+                                            font-size:1.3em;
+                                            
+                                           }
+                                        }
+                                }
+                        }
+                        .link{
+                            width:100% ;
+                            height: 39%;
+                            margin-top: 10px;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                                div{
+                                    width: 80%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: 30px;
+                                    span{
+                                        margin-right: 75px;
+                                        
+    
+                                    }
+                                    .fb{
+                                        @include flex;
+                                        margin-top: 5px;
+                                        margin-bottom: 5px;
+                                        width: 420px;
+                                        height: 20px;
+                                        justify-content: flex-start;
+                                        
+                                    }
+                                   
+                                    a{
+                                        list-style: none;
+                                        font-family: 'Roboto';
+                                        text-decoration: none;
+                                            
+                                    }
+                                    
+                                    .tre{
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: #0B0754;
+                                        margin-right: 10px;
+                                        margin-bottom: 5%;
+                                        margin-top: 5%;
+                                      
+                                    }
+                                   
+                                }
+                        }
+                }
+                .info-affiche{
+                    width: 60%;
+                    height: 101%;
+                    border: 1px solid #0B0754;
+                    border-radius: 10px;
+                    margin-top: 6px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                        .pro-affiche{
+                            width: 90%;
+                            height: 90%;
+                            margin-top: 40px;
+                            h5{
+                                font-size: 1.5em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                    span.titre{
+                                        margin-left: 100px;
+                                        font-weight: 100px;
+                                        color: #E8505B;
+                                    }
+                            }
+                            .des{
+                                width: 94%;
+                                height: 18%;
+                                border: 1px solid black;
+                                padding: 20px;
+                                font-size: 1.2em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-top: 5px;
+                            }
+                            p{
+                                font-size: 1.2em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-bottom: 5px;
+                                margin-top: 10px;
+                                
+                            }
+                            .tre{
+                                width: 100%;
+                                height: 2px;
+                                background-color: #0B0754;
+                                margin-right: 10px;
+                                
+                                margin-top: 10px;
+                               
+                              
+                            }
+                        }
+                        .btn{
+                            width: 100%;
+                            height: 10%;
+                            @include flex;
+                            margin-bottom: 25px;
+                            form{
+                                width: 100%;
+                                height: 100%;
+                                @include flex;
+                                justify-content: space-around;
+                                margin-top: 13%;
+                                button{
+                                    margin-left: 0px;
+                                    width: 110px;
+                                    height: 30px;
+                                    margin-bottom: 15px;
+                                    background: transparent;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    position: relative;
+                                    display: inline-block;
+                                    transition: all 0.3s ease;
+                                    border: 1px solid rgb(10, 10, 92);
+                                }
+                                .btn-2{
+                                    transition: all 0.3 ease;
+                                }
+                                .btn-2:hover{
+                                    box-shadow: 
+                                    -7px -7px 20px 0px #fff9,
+                                    -4px -4px 5px 0px #fff,
+                                    7px 7px 20px 0px #0002,
+                                    4px 4px 5px 0px #0001;
+                                }
+                            }
+                        }
+                }
+            }
+            
+    }
+}
+@media screen and(max-width:768px){
+    #affiche-body{
+        width: 100vw;
+        height: 80vh;
+        margin-top: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .bloc-affiche{
+                width: 90%;
+                height: 60vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-affiche{
+                    width: 40%;
+                    height: 100%;
+                    margin-right: 20px;
+                        .bloc-img{
+                            width: 100%;
+                            height: 60%;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                            margin-bottom: 10px;
+                            @include flex;
+                                div{
+                                    width: 90%;
+                                    height: 90%;
+                                    border-radius: 50%;
+                                    @include flex;
+                                    justify-content: space-around;
+                                    flex-direction: column;
+                                        img{
+                                            width: 50%;
+                                            height: 45%;
+                                             border-radius: 50%;
+                                             margin-top: 20px;
+                                        }
+                                        div{  
+                                           width: 100%;
+                                           height: 30%;
+                                           @include flex;
+                                           flex-direction: column;
+                                           p{
+                                                list-style: none;
+                                                font-family: 'Roboto';
+                                                text-decoration: none;
+                                                font-size:1.15em;
+                                                text-transform: uppercase;
+                                                margin-bottom: 5px;
+                                           }
+                                           h3{
+                                            font-family: 'Roboto';
+                                            text-decoration: none;
+                                            font-size:1.2em;
+                                            
+                                           }
+                                        }
+                                }
+                        }
+                        .link{
+                            width:100% ;
+                            height: 39%;
+                            margin-top: 10px;
+                            border: 1px solid #0B0754;
+                            border-radius: 10px;
+                                div{
+                                    width: 85%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: 25px;
+                                    span{
+                                        margin-right: 45px;
+                                        
+    
+                                    }
+                                    .fb{
+                                        @include flex;
+                                        margin-top: 5px;
+                                        margin-bottom: 5px;
+                                        width: 100%;
+                                        height: 20px;
+                                        justify-content: flex-start;
+                                        p{  
+                                            list-style: none;
+                                            font-family: 'Roboto';
+                                            text-decoration: none;
+                                            font-size: 0.85em;  
+                                        }
+                                    }
+                                   
+                                    a{
+                                        list-style: none;
+                                        font-family: 'Roboto';
+                                        text-decoration: none;
+                                        font-size: 0.8;    
+                                    }
+                                    
+                                    .tre{
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: #0B0754;
+                                        margin-right: 10px;
+                                        margin-bottom: 5%;
+                                        margin-top: 5%;
+                                      
+                                    }
+                                   
+                                }
+                        }
+                }
+                .info-affiche{
+                    width: 60%;
+                    height: 100%;
+                    border: 1px solid #0B0754;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                        .pro-affiche{
+                            width: 75%;
+                            height: 65%;
+                            margin-top: 0px;
+                            margin-bottom: 15px;
+                            h5{
+                                font-size: 1.5em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                    span.titre{
+                                        margin-left: 50px;
+                                        font-weight: 100px;
+                                        color: #E8505B;
+                                    }
+                            }
+                            .des{
+                                width: 88%;
+                                height: 15%;
+                                border: 1px solid black;
+                                padding: 20px;
+                                font-size: 0.65em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-top: 5px;
+                            }
+                            p{
+                                font-size: 1em;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 200;
+                                margin-bottom: 5px;
+                                margin-top: 10px;
+                                
+                            }
+                            .tre{
+                                width: 100%;
+                                height: 2px;
+                                background-color: #0B0754;
+                                margin-right: 10px;
+                                
+                                margin-top: 10px;
+                               
+                              
+                            }
+                        }
+                        .btn{
+                            width: 100%;
+                            height: 10%;
+                            @include flex;
+
+                            form{
+                                width: 50%;
+                                height: 70%;
+                                @include flex;
+                                align-items: flex-end;
+                                margin-top: 25%;
+                                button{
+                                    margin-left: 0px;
+                                    width: 100px;
+                                    height: 30px;
+                                    margin-bottom: 15px;
+                                    background: transparent;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    position: relative;
+                                    display: inline-block;
+                                    transition: all 0.3s ease;
+                                    border: 1px solid rgb(10, 10, 92);
+                                }
+                                .btn-2{
+                                    transition: all 0.3 ease;
+                                }
+                                .btn-2:hover{
+                                    box-shadow: 
+                                    -7px -7px 20px 0px #fff9,
+                                    -4px -4px 5px 0px #fff,
+                                    7px 7px 20px 0px #0002,
+                                    4px 4px 5px 0px #0001;
+                                }
+                            }
+                                
+                        }
+                }
+            }
+            
+    }
 }
