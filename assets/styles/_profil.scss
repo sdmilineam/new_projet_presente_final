@@ -255,10 +255,10 @@
         align-items: center;
     
             .bloc-profil{
-                width: 65%;
+                width: 50%;
                 height: 80vh;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center; 
                     .image-perso{
                         width: 300px;
@@ -403,10 +403,10 @@
         align-items: center;
     
             .bloc-profil{
-                width: 65%;
+                width: 55%;
                 height: 70vh;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center; 
                     .image-perso{
                         width: 280px;
@@ -557,7 +557,7 @@
                 width: 65%;
                 height: 70vh;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center; 
                     .image-perso{
                         width: 280px;
@@ -651,7 +651,7 @@
                                         }
                                 }
                                 .btn-div2{
-                                    width: 80%;
+                                    width: 65%;
                                     display: flex;
                                     justify-content: space-between;
                                     align-content: center;
@@ -734,11 +734,11 @@
                     }
                     .datauser{
                         width: 70vw;
-                        height: 50vh;
+                        height: 60vh;
                         border: solid 1px rgb(2, 0, 0) ;
                         display: flex;
                         justify-content: center;
-                        margin-top: -40%;
+                        margin-top: 5%;
                         align-items: center;
                         .datauser2{
                             margin-top: 5%;
@@ -750,7 +750,7 @@
                             .infouser{
                                 width: 100%;
                                 height: 90%;
-                                margin-left: -10%;
+                                margin-left: -2%;
                                 .tre{
                                     width: 260px;
                                     height: 1px;
@@ -807,19 +807,20 @@
                                     
                                 }
                                 .btn-div2{
-                                    width: 100%;
+                                    width: 95%;
                                     height: 50%;
                                     margin-bottom: 10px;
                                     display: flex;
                                     justify-content: space-around;
                                     align-content: center;
+                                    margin-left: 0px;
                                     form{
                                         width: auto;
                                         height: auto;
                                         .btn-2{
                                             width: 80px;
                                             height: 25px;
-                                            margin-left: 0px;
+                                            margin-left: 18px;
                                             border: 1px solid rgb(11 , 7, 84) ;
                                             font-family: 'Roboto', sans-serif;
                                             font-weight: 300;
@@ -899,11 +900,11 @@
                     }
                     .datauser{
                         width: 70vw;
-                        height: 50vh;
+                        height: 60vh;
                         border: solid 1px rgb(2, 0, 0) ;
                         display: flex;
                         justify-content: center;
-                        margin-top: -40%;
+                        margin-top: 5%;
                         align-items: center;
                         .datauser2{
                             margin-top: 5%;
@@ -1060,6 +1061,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center; 
+                        margin-bottom: 30%;
                          .blog-pserso{
                              width: 100%;
                              height: 100%;
@@ -1077,11 +1079,11 @@
                     }
                     .datauser{
                         width: 70vw;
-                        height: 50vh;
+                        height: 60vh;
                         border: solid 1px rgb(2, 0, 0) ;
                         display: flex;
                         justify-content: center;
-                        margin-top: -40%;
+                        // margin-top: -40%;
                         align-items: center;
                         .datauser2{
                             margin-top: 5%;
@@ -1108,7 +1110,7 @@
                             }
                            
                             .bloc-btn{
-                                margin-top: 30px;
+                                margin-top: -2%;
                                 width: 100%;
                                 margin-left: -15%;
                                 height: 20%;
