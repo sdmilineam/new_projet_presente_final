@@ -288,7 +288,7 @@ header{
 
 
 }    
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1080px){
 header{
     .img-logo{
       width: 200px;
@@ -305,7 +305,8 @@ header{
           }
       }
       .btn{
-        width: 130px;
+        width: 150px;
+        height: 45px;
       }
     }
     

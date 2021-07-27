@@ -385,21 +385,24 @@
 @media screen and (max-width:1080px) {
     #login{
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-bottom: 20vh;
        
             #bloc_login{
                 width: 80%;
                 height: 100%;
-                
-                margin-left: 25%;
+                display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+                margin-left: 10%;
                 .login{
                     width: 60.1%;
-                    height:33.9%;
+                    height:42.8%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -413,12 +416,12 @@
                             height: 28px;
                             font-size: 0.9em;
                             margin-bottom:10vh ;
-                            margin-left:45.4vh ;
+                            margin-left:49.5vh ;
                         }
                 }   
                 form{
                     width: 59.8%;
-                    height: 40%;
+                    height: 65%;
                     border: solid black 1px;
                     display: flex;
                     justify-content: center;
@@ -512,20 +515,24 @@
 @media screen and (max-width:768px) {
     #login{
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 10vh;
-        margin-bottom: 0vh;
+        margin-bottom: 20vh;
        
             #bloc_login{
                 width: 80%;
                 height: 100%;
-                margin-left: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-left: 5%;
                 .login{
                     width: 75%;
-                    height:31.9%;
+                    height:48%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -539,7 +546,7 @@
                             height: 28px;
                             font-size: 0.9em;
                             margin-bottom:8vh ;
-                            margin-left:45vh ;
+                            margin-left:45.5vh ;
                             background-color: #E8505B;
                             color: white;
                             border: none;
@@ -547,7 +554,7 @@
                 }   
                 form{
                     width: 74.6%;
-                    height: 40%;
+                    height: 70%;
                     border: solid black 1px;
                     display: flex;
                     justify-content: center;
@@ -641,20 +648,24 @@
 @media screen and (max-width:425px) {
     #login{
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 10vh;
-        margin-bottom: 0vh;
+        margin-bottom: 10vh;
        
             #bloc_login{
                 width: 80%;
                 height: 100%;
-                margin-left: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-left: 5%;
                 .login{
                     width: 95%;
-                    height:24.3vh;
+                    height:24vh;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -676,7 +687,7 @@
                 }   
                 form{
                     width: 94.4%;
-                    height: 38%;
+                    height: 65%;
                     border: solid black 1px;
                     display: flex;
                     justify-content: center;
