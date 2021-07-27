@@ -308,6 +308,137 @@
              }
                 
         }
+        .form-all-2{
+            width: 55%;
+            height: 50vh;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            margin-right: 10%;
+            margin-left: 30%;
+            
+            .form-grop2{
+                width: 60%;
+                height: 70vh;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 0px 0px 0px 0px;
+                @include flex;
+                .label-mini{
+                    width: 90%;
+                    height: 75vh;
+                    @include flex;
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    width: 400px;
+                    flex-direction: column;
+                    .form-control{
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        padding: 5px;
+                        width: 400px;
+                        border: 3px solid #0B0754;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+                        @include flex;
+                        margin-top: 10px;
+                        
+                        
+                        }
+              
+                        .form-control2{
+                            border-radius: 12px;
+                            border: solid black 1px;
+                            box-sizing: border-box;
+                            color: #eee;
+                            font-size: 18px;
+                            height: 40px;
+                            outline: 0;
+                            width: 90%;
+                            @include flex;
+                            margin-top: 2%;
+                            margin-bottom: 2%;
+               
+                        }
+                        
+                        
+            
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        padding: 10px 25px;
+                        border: 2px solid rgb(10, 10, 92);
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 25px;
+                        transition: all 0.3s ease;
+                        margin-left: 30%;
+                        
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+            }
+                
+        }
     }
 }
 @media screen and(max-width:1440px) {
@@ -463,6 +594,137 @@
                     4px 4px 5px 0px #0001;
                 }
              }
+                
+        }
+        .form-all-2{
+            width: 55%;
+            height: 50vh;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 10%;
+            margin-left: 30%;
+            
+            .form-grop2{
+                width: 60%;
+                height: 60vh;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 0px 0px 0px 0px;
+                @include flex;
+                .label-mini{
+                    width: 90%;
+                    height: 75vh;
+                    @include flex;
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    width: 400px;
+                    flex-direction: column;
+                    .form-control{
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        padding: 5px;
+                        width: 400px;
+                        border: 3px solid #0B0754;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+                        @include flex;
+                        margin-top: 10px;
+                        
+                        
+                        }
+              
+                        .form-control2{
+                            border-radius: 12px;
+                            border: solid black 1px;
+                            box-sizing: border-box;
+                            color: #eee;
+                            font-size: 18px;
+                            height: 40px;
+                            outline: 0;
+                            width: 90%;
+                            @include flex;
+                            margin-top: 2%;
+                            margin-bottom: 2%;
+               
+                        }
+                        
+                        
+            
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        padding: 10px 25px;
+                        border: 2px solid rgb(10, 10, 92);
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 25px;
+                        transition: all 0.3s ease;
+                        margin-left: 30%;
+                        
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+            }
                 
         }
     }
@@ -625,19 +887,13 @@
              }
                 
         }
-    }
-}
-@media screen and(max-width:768px) {
-    #form{
-        width: 100%;
-        height: 100%;
-        @include flex;
-        .form-all{
+        .form-all-2{
             width: 55%;
-            height: 90%;
+            height: 50vh;
             margin-top: 10%;
             margin-bottom: 10%;
             margin-right: 10%;
+            margin-left: 20%;
             .form-grop{
                 width: 100%;
                 height: 80%;
@@ -783,6 +1039,565 @@
                     4px 4px 5px 0px #0001;
                 }
              }
+            .form-grop2{
+                width: 80%;
+                height: 60vh;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 0px 0px 0px 0px;
+                @include flex;
+                .label-mini{
+                    width: 90%;
+                    height: 75vh;
+                    @include flex;
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    width: 400px;
+                    flex-direction: column;
+                    .form-control{
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        padding: 5px;
+                        width: 350px;
+                        border: 3px solid #0B0754;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+                        @include flex;
+                        margin-top: 10px;
+                        
+                        
+                        }
+              
+                        .form-control2{
+                            border-radius: 12px;
+                            border: solid black 1px;
+                            box-sizing: border-box;
+                            color: #eee;
+                            font-size: 18px;
+                            height: 40px;
+                            outline: 0;
+                            width: 90%;
+                            @include flex;
+                            margin-top: 2%;
+                            margin-bottom: 2%;
+               
+                        }
+                        
+                        
+            
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        padding: 10px 25px;
+                        border: 2px solid rgb(10, 10, 92);
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 25px;
+                        transition: all 0.3s ease;
+                        margin-left: 30%;
+                        
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+            }
+                
+        }
+    }
+}
+@media screen and(max-width:768px) {
+    #form{
+        width: 100%;
+        height: 100%;
+        @include flex;
+        .form-all{
+            width: 55%;
+            height: 90%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 10%;
+            // margin-left: 20%;
+            .form-grop{
+                width: 100%;
+                height: 80%;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 50px 50px 50px 50px;
+                @include flex;
+                flex-direction: column;
+                
+                .titre{
+                    font-family: 'Roboto';
+                    font-size: 1.5em;
+                    margin-bottom: 30px;
+                    
+                }
+                  
+                .label{
+                    font-family: 'Roboto';
+                    font-size: 1.5em;
+                    width: 400px;
+    
+                }
+                textarea{
+                    width: 400px;
+                    height: auto;
+                    resize: vertical;
+                    min-height : 60px;
+                    max-height : 300px;
+                }
+                
+                .agee{
+                    background-color: #303245;
+                        border-radius: 12px;
+                        height: 20px;
+                        width: 15%;
+                        margin-top: 10px;
+    
+                }
+    
+            
+                .form-control{
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    padding: 10px;
+                    width: 390px;
+                    border: 3px solid #0B0754;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    background: rgba(20, 20, 20, .2);
+                    color: black;
+                    outline: none;
+                    @include flex;
+                    margin-top: 10px;
+                    
+                    
+                    }
+          
+                    .form-control2{
+                        border-radius: 12px;
+                        border: solid black 1px;
+                        box-sizing: border-box;
+                        color: #eee;
+                        font-size: 18px;
+                        height: 40px;
+                        outline: 0;
+                        width: 90%;
+                        @include flex;
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+           
+                    }
+                    
+                    
+        
+                .btn{
+                    width: 150px;
+                    height: 40px;
+                    padding: 10px 25px;
+                    border: 2px solid rgb(10, 10, 92);
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    display: inline-block;
+                    margin-top: 25px;
+                    transition: all 0.3s ease;
+                    margin-left: 30%;
+                    
+                }
+                .btn-4 {
+                    position: relative;
+                    color: rgb(10, 10, 92);
+                    z-index: 2;
+                    line-height: 40px;
+                    padding: 0;
+                  }
+                  .btn-4:hover{
+                    border: none;
+                  }
+                  .btn-4:before,
+                  .btn-4:after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 0%;
+                    border: 2px solid;
+                    z-index: -1;
+                    transition: all 0.3s ease;
+                  }
+                  .btn-4:before {
+                    top: 0;
+                     left: 0;
+                     border-bottom-color: transparent;
+                     border-right-color: transparent;
+                     border-top-color: rgb(10, 10, 92);
+                     border-left-color: rgb(10, 10, 92);
+                  }
+                  .btn-4:after{
+                     bottom: 0;
+                     right: 0;
+                     border-top-color: transparent;
+                     border-left-color: transparent;
+                     border-bottom-color: rgb(10, 10, 92);
+                     border-right-color: rgb(10, 10, 92);
+                  }
+                  .btn-4:hover:before,
+                  .btn-4:hover:after {
+                    border-color: rgb(10, 10, 92);
+                    height: 100%;
+                    width: 100%;
+                  }
+                .btn-2{
+                    transition: all 0.3 ease;
+                }
+                .btn-2:hover{
+                    box-shadow: 
+                    -7px -7px 20px 0px #fff9,
+                    -4px -4px 5px 0px #fff,
+                    7px 7px 20px 0px #0002,
+                    4px 4px 5px 0px #0001;
+                }
+             }
+            
+            
+                
+        }
+        .form-all-2{
+            width: 55%;
+            height: 50vh;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 10%;
+            margin-left: 20%;
+            .form-grop{
+                width: 100%;
+                height: 80%;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 50px 50px 50px 50px;
+                @include flex;
+                flex-direction: column;
+                
+                .titre{
+                    font-family: 'Roboto';
+                    font-size: 1.5em;
+                    margin-bottom: 30px;
+                    
+                }
+                  
+                .label{
+                    font-family: 'Roboto';
+                    font-size: 1.5em;
+                    width: 400px;
+    
+                }
+                textarea{
+                    width: 400px;
+                    height: auto;
+                    resize: vertical;
+                    min-height : 60px;
+                    max-height : 300px;
+                }
+                
+                .agee{
+                    background-color: #303245;
+                        border-radius: 12px;
+                        height: 20px;
+                        width: 15%;
+                        margin-top: 10px;
+    
+                }
+    
+            
+                .form-control{
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    padding: 10px;
+                    width: 390px;
+                    border: 3px solid #0B0754;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    background: rgba(20, 20, 20, .2);
+                    color: black;
+                    outline: none;
+                    @include flex;
+                    margin-top: 10px;
+                    
+                    
+                    }
+          
+                    .form-control2{
+                        border-radius: 12px;
+                        border: solid black 1px;
+                        box-sizing: border-box;
+                        color: #eee;
+                        font-size: 18px;
+                        height: 40px;
+                        outline: 0;
+                        width: 90%;
+                        @include flex;
+                        margin-top: 2%;
+                        margin-bottom: 2%;
+           
+                    }
+                    
+                    
+        
+                .btn{
+                    width: 150px;
+                    height: 40px;
+                    padding: 10px 25px;
+                    border: 2px solid rgb(10, 10, 92);
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    display: inline-block;
+                    margin-top: 25px;
+                    transition: all 0.3s ease;
+                    margin-left: 30%;
+                    
+                }
+                .btn-4 {
+                    position: relative;
+                    color: rgb(10, 10, 92);
+                    z-index: 2;
+                    line-height: 40px;
+                    padding: 0;
+                  }
+                  .btn-4:hover{
+                    border: none;
+                  }
+                  .btn-4:before,
+                  .btn-4:after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 0%;
+                    border: 2px solid;
+                    z-index: -1;
+                    transition: all 0.3s ease;
+                  }
+                  .btn-4:before {
+                    top: 0;
+                     left: 0;
+                     border-bottom-color: transparent;
+                     border-right-color: transparent;
+                     border-top-color: rgb(10, 10, 92);
+                     border-left-color: rgb(10, 10, 92);
+                  }
+                  .btn-4:after{
+                     bottom: 0;
+                     right: 0;
+                     border-top-color: transparent;
+                     border-left-color: transparent;
+                     border-bottom-color: rgb(10, 10, 92);
+                     border-right-color: rgb(10, 10, 92);
+                  }
+                  .btn-4:hover:before,
+                  .btn-4:hover:after {
+                    border-color: rgb(10, 10, 92);
+                    height: 100%;
+                    width: 100%;
+                  }
+                .btn-2{
+                    transition: all 0.3 ease;
+                }
+                .btn-2:hover{
+                    box-shadow: 
+                    -7px -7px 20px 0px #fff9,
+                    -4px -4px 5px 0px #fff,
+                    7px 7px 20px 0px #0002,
+                    4px 4px 5px 0px #0001;
+                }
+             }
+            .form-grop2{
+                width: 80%;
+                height: 60vh;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 0px 0px 0px 0px;
+                @include flex;
+                .label-mini{
+                    width: 90%;
+                    height: 75vh;
+                    @include flex;
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    width: 400px;
+                    flex-direction: column;
+                    .form-control{
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        padding: 5px;
+                        width: 250px;
+                        border: 3px solid #0B0754;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+                        @include flex;
+                        margin-top: 10px;
+                        
+                        
+                        }
+              
+                        .form-control2{
+                            border-radius: 12px;
+                            border: solid black 1px;
+                            box-sizing: border-box;
+                            color: #eee;
+                            font-size: 18px;
+                            height: 40px;
+                            outline: 0;
+                            width: 90%;
+                            @include flex;
+                            margin-top: 2%;
+                            margin-bottom: 2%;
+               
+                        }
+                        
+                        
+            
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        padding: 10px 25px;
+                        border: 2px solid rgb(10, 10, 92);
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 25px;
+                        transition: all 0.3s ease;
+                        margin-left: 20%;
+                        
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+            }
                 
         }
     }
@@ -794,7 +1609,7 @@
         @include flex;
         .form-all{
             width: 100%;
-            height: auto;
+            height: 100vh;
             margin-top: 20%;
             margin-bottom: 10%;
             margin-right: 0%;
@@ -1275,9 +2090,18 @@
                     4px 4px 5px 0px #0001;
                 }
              }
+            
+        }
+        .form-all-2{
+            width: 75%;
+            height: 50vh;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 0%;
+            margin-left: 0%;
             .form-grop2{
-                width: 80%;
-                height: 60vh;
+                width: 100%;
+                height: 50vh;
                 border-radius: 12px;
                 border: 5px solid  rgb(10, 10, 92);
                 padding: 0px 0px 0px 0px;
@@ -1395,8 +2219,9 @@
                         4px 4px 5px 0px #0001;
                     }
                 }
-            }    
-        }
+            }
+                
+        } 
     }
 }
 @media screen and(max-width:375px) {
@@ -1596,6 +2421,136 @@
              }
                 
         }
+        .form-all-2{
+            width: 75%;
+            height: 50vh;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 0%;
+            margin-left: 0%;
+            .form-grop2{
+                width: 100%;
+                height: 50vh;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 0px 0px 0px 0px;
+                @include flex;
+                .label-mini{
+                    width: 90%;
+                    height: 75vh;
+                    @include flex;
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    width: 400px;
+                    flex-direction: column;
+                    .form-control{
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        padding: 3px;
+                        width: 250px;
+                        border: 3px solid #0B0754;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+                        @include flex;
+                        margin-top: 10px;
+                        
+                        
+                        }
+              
+                        .form-control2{
+                            border-radius: 12px;
+                            border: solid black 1px;
+                            box-sizing: border-box;
+                            color: #eee;
+                            font-size: 18px;
+                            height: 40px;
+                            outline: 0;
+                            width: 90%;
+                            @include flex;
+                            margin-top: 2%;
+                            margin-bottom: 2%;
+               
+                        }
+                        
+                        
+            
+                    .btn{
+                        width: 120px;
+                        height: 30px;
+                        padding: 5px 20px;
+                        border: 2px solid rgb(10, 10, 92);
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 25px;
+                        transition: all 0.3s ease;
+                        margin-left: 30%;
+                        
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+            }
+                
+        } 
     }
 }
 @media screen and(max-width:325px) {
@@ -1916,5 +2871,135 @@
             }  
                 
         }
+        .form-all-2{
+            width: 75%;
+            height: 60vh;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 0%;
+            margin-left: 0%;
+            .form-grop2{
+                width: 100%;
+                height: 60vh;
+                border-radius: 12px;
+                border: 5px solid  rgb(10, 10, 92);
+                padding: 0px 0px 0px 0px;
+                @include flex;
+                .label-mini{
+                    width: 95%;
+                    height: 75vh;
+                    @include flex;
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    width: 400px;
+                    flex-direction: column;
+                    .form-control{
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                        padding: 2px;
+                        width: 200px;
+                        border: 3px solid #0B0754;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+                        @include flex;
+                        margin-top: 10px;
+                        
+                        
+                        }
+              
+                        .form-control2{
+                            border-radius: 12px;
+                            border: solid black 1px;
+                            box-sizing: border-box;
+                            color: #eee;
+                            font-size: 18px;
+                            height: 40px;
+                            outline: 0;
+                            width: 90%;
+                            @include flex;
+                            margin-top: 2%;
+                            margin-bottom: 2%;
+               
+                        }
+                        
+                        
+            
+                    .btn{
+                        width: 120px;
+                        height: 25px;
+                        padding: 0px 0px;
+                        border: 2px solid rgb(10, 10, 92);
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 25px;
+                        transition: all 0.3s ease;
+                        margin-left: 20%;
+                        
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+            }
+                
+        } 
     }
 }
