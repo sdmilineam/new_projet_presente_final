@@ -22,6 +22,7 @@
                 align-items: center;
                 flex-direction: column;
                 background-image: url(/public/image/login.jpg);
+                background-repeat: no-repeat;
                 border-radius: 30px 30px 0px  0px;
                     .btn_rgt{
                         width: 100px;
@@ -122,4 +123,911 @@
 
         }
        
+}
+@media screen and (max-width:1920px) {
+    #login{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+       
+            #bloc_login{
+                width: 80%;
+                height: 100%;
+                
+                margin-left: 35%;
+                .login{
+                    width: 50%;
+                    height:50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 100px;
+                            height: 40px;
+                            font-size: 1em;
+                            margin-bottom:20vh ;
+                            margin-left:53.8vh ;
+                            background-color: #E8505B;
+                            color: white;
+                            border: none;
+                        }
+                }   
+                form{
+                    width: 50%;
+                    height: 50%;
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 10px;
+                        width: 60%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        margin-top: 20px;
+                        @include flex;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
+}
+@media screen and (max-width:1440px) {
+    #login{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+       
+            #bloc_login{
+                width: 80%;
+                height: 100%;
+                
+                margin-left: 30%;
+                .login{
+                    width: 60%;
+                    height:46%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 120px;
+                            height: 35px;
+                            font-size: 1em;
+                            margin-bottom:20vh ;
+                            margin-left:62.5vh ;
+                            background-color: #E8505B;
+                            color: white;
+                            border: none;
+                        }
+                }   
+                form{
+                    width: 59.8%;
+                    height: 50%;
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 10px;
+                        width: 60%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        margin-top: 20px;
+                        @include flex;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
+}
+@media screen and (max-width:1080px) {
+    #login{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+       
+            #bloc_login{
+                width: 80%;
+                height: 100%;
+                
+                margin-left: 25%;
+                .login{
+                    width: 60.1%;
+                    height:33.9%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 110px;
+                            height: 28px;
+                            font-size: 0.9em;
+                            margin-bottom:10vh ;
+                            margin-left:45.4vh ;
+                        }
+                }   
+                form{
+                    width: 59.8%;
+                    height: 40%;
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 10px;
+                        width: 60%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 150px;
+                        height: 40px;
+                        margin-top: 20px;
+                        @include flex;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
+}
+@media screen and (max-width:768px) {
+    #login{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 0vh;
+       
+            #bloc_login{
+                width: 80%;
+                height: 100%;
+                margin-left: 20%;
+                .login{
+                    width: 75%;
+                    height:31.9%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 110px;
+                            height: 28px;
+                            font-size: 0.9em;
+                            margin-bottom:8vh ;
+                            margin-left:45vh ;
+                            background-color: #E8505B;
+                            color: white;
+                            border: none;
+                        }
+                }   
+                form{
+                    width: 74.6%;
+                    height: 40%;
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 6px;
+                        width: 60%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 130px;
+                        height: 30px;
+                        margin-top: 20px;
+                        @include flex;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
+}
+@media screen and (max-width:425px) {
+    #login{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 0vh;
+       
+            #bloc_login{
+                width: 80%;
+                height: 100%;
+                margin-left: 10%;
+                .login{
+                    width: 95%;
+                    height:24.3vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 75px;
+                            height: 25px;
+                            font-size: 0.7em;
+                            margin-bottom:5vh ;
+                            margin-left:32.5vh ;
+                            background-color: #E8505B;
+                            color: white;
+                            border: none;
+                        }
+                }   
+                form{
+                    width: 94.4%;
+                    height: 38%;
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 6px;
+                        width: 60%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 130px;
+                        height: 30px;
+                        margin-top: 20px;
+                        @include flex;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
+}
+@media screen and (max-width:375px) {
+    #login{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 0vh;
+       
+            #bloc_login{
+                width: 80%;
+                height: 100%;
+                margin-left: 2%;
+                .login{
+                    width: 100%;
+                    height:21vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 70px;
+                            height: 22px;
+                            font-size: 0.6em;
+                            margin-bottom:4vh ;
+                            margin-left:28.2vh ;
+                            background-color: #E8505B;
+                            color: white;
+                            border: none;
+                        }
+                }   
+                form{
+                    width: 99%;
+                    height: 60%;
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 6px;
+                        width: 60%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 130px;
+                        height: 30px;
+                        margin-top: 20px;
+                        @include flex;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
+}
+@media screen and (max-width:320px) {
+    #login{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+       
+            #bloc_login{
+                width: 80%;
+                height:auto;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                margin-left: 2%;
+                .login{
+                    width: 100%;
+                    height:19vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-image: url(/public/image/login.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    border-radius: 30px 30px 0px  0px;
+                        .btn_rgt{
+                            width: 65px;
+                            height: 20px;
+                            font-size: 0.58em;
+                            margin-bottom:6vh ;
+                            margin-left:24.7vh ;
+                            background-color: #E8505B;
+                            color: white;
+                            border: none;
+                        }
+                }   
+                form{
+                    width: 99%;
+                    height: 40vh;
+                   
+                    border: solid black 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 0px 0px 30px  30px;
+                    .form-control{
+                        @include flex;
+                        margin: 15px 0;
+                        font-size: 16px;
+                        padding: 3px;
+                        width: 75%;
+                        border: 2px solid rgb(10, 10, 92);
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        background: rgba(20, 20, 20, .2);
+                        color: black;
+                        outline: none;
+           
+                    }
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1.5em;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 100px;
+                        height: 30px;
+                        margin-top: 20px;
+                        @include flex;
+                        font-size: 0.65em;
+                    }
+                    .btn-4 {
+                        position: relative;
+                        color: rgb(10, 10, 92);
+                        z-index: 2;
+                        line-height: 40px;
+                        padding: 0;
+                      }
+                      .btn-4:hover{
+                        border: none;
+                      }
+                      .btn-4:before,
+                      .btn-4:after {
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 0%;
+                        border: 2px solid;
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                      }
+                      .btn-4:before {
+                        top: 0;
+                         left: 0;
+                         border-bottom-color: transparent;
+                         border-right-color: transparent;
+                         border-top-color: rgb(10, 10, 92);
+                         border-left-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:after{
+                         bottom: 0;
+                         right: 0;
+                         border-top-color: transparent;
+                         border-left-color: transparent;
+                         border-bottom-color: rgb(10, 10, 92);
+                         border-right-color: rgb(10, 10, 92);
+                      }
+                      .btn-4:hover:before,
+                      .btn-4:hover:after {
+                        border-color: rgb(10, 10, 92);
+                        height: 100%;
+                        width: 100%;
+                      }
+                    .btn-2{
+                        transition: all 0.3 ease;
+                    }
+                    .btn-2:hover{
+                        box-shadow: 
+                        -7px -7px 20px 0px #fff9,
+                        -4px -4px 5px 0px #fff,
+                        7px 7px 20px 0px #0002,
+                        4px 4px 5px 0px #0001;
+                    }
+                }
+    
+            }
+           
+    }
 }
