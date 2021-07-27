@@ -214,7 +214,7 @@
 @media screen and(max-width:1920px){
     #affiche-body{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
@@ -222,7 +222,7 @@
         align-items: center;
             .bloc-affiche{
                 width: 75%;
-                height: 85vh;
+                height: 90vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -311,8 +311,8 @@
                                         height: 2px;
                                         background-color: #0B0754;
                                         margin-right: 10px;
-                                        margin-bottom: 20px;
-                                        margin-top: 20px;
+                                        margin-bottom: 25px;
+                                        margin-top: 25px;
                                       
                                     }
                                    
@@ -331,8 +331,8 @@
                     flex-direction: column;
                         .pro-affiche{
                             width: 90%;
-                            height: 90%;
-                            margin-top: 40px;
+                            height: 100%;
+                            margin-top: 55px;
                             h5{
                                 font-size: 1.5em;
                                 font-family: 'Roboto', sans-serif;
@@ -416,7 +416,7 @@
 @media screen and(max-width:1440px){
     #affiche-body{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
@@ -424,7 +424,7 @@
         align-items: center;
             .bloc-affiche{
                 width: 75%;
-                height: 75vh;
+                height: 80vh;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -512,8 +512,8 @@
                                         height: 1px;
                                         background-color: #0B0754;
                                         margin-right: 10px;
-                                        margin-bottom: 5%;
-                                        margin-top: 5%;
+                                        margin-bottom: 6%;
+                                        margin-top: 6%;
                                       
                                     }
                                    
@@ -545,7 +545,7 @@
                                     }
                             }
                             .des{
-                                width: 94%;
+                                width: 93%;
                                 height: 18%;
                                 border: 1px solid black;
                                 padding: 20px;
@@ -618,7 +618,7 @@
 @media screen and(max-width:1080px){
     #affiche-body{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
@@ -747,7 +747,7 @@
                                     }
                             }
                             .des{
-                                width: 94%;
+                                width: 90%;
                                 height: 18%;
                                 border: 1px solid black;
                                 padding: 20px;
@@ -819,7 +819,7 @@
 @media screen and(max-width:768px){
     #affiche-body{
         width: 100vw;
-        height: 65vh;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
@@ -827,7 +827,7 @@
         align-items: center;
             .bloc-affiche{
                 width: 90%;
-                height: 50vh;
+                height: 65vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -837,7 +837,7 @@
                     margin-right: 20px;
                         .bloc-img{
                             width: 100%;
-                            height: 60%;
+                            height: 59%;
                             border: 1px solid #0B0754;
                             border-radius: 10px;
                             margin-bottom: 10px;
@@ -850,7 +850,7 @@
                                     justify-content: space-around;
                                     flex-direction: column;
                                         img{
-                                            width: 55%;
+                                            width: 57%;
                                             height: 50%;
                                              border-radius: 50%;
                                              margin-top: 20px;
@@ -920,8 +920,8 @@
                                         height: 1px;
                                         background-color: #0B0754;
                                         margin-right: 10px;
-                                        margin-bottom: 5%;
-                                        margin-top: 5%;
+                                        margin-bottom: 6%;
+                                        margin-top: 6%;
                                       
                                     }
                                    
@@ -1046,28 +1046,28 @@
     
     #affiche-body{
         width: 100vw;
-        height: auto;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
         justify-content: center;
         align-items: center;
             .bloc-affiche{
-                margin-top: 22vh;
-                margin-bottom: 22vh;
+                margin-top: 0vh;
+                margin-bottom: 0vh;
                 width: 90%;
-                height: 100vh;
+                height: 70%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 .img-affiche{
                     width: 100%;
-                    height: 90%;
+                    height: 100%;
                     margin-right: 0px;
                         .bloc-img{
                             width: 100%;
-                            height: 85%;
+                            height: 40vh;
                             border: 1px solid #0B0754;
                             border-radius: 10px;
                             margin-bottom: 10px;
@@ -1109,7 +1109,7 @@
                         }
                         .link{
                             width:100% ;
-                            height: 65%;
+                            height: 30vh;
                             margin-top: 10px;
                             border: 1px solid #0B0754;
                             border-radius: 10px;
@@ -1159,9 +1159,9 @@
                         }
                 }
                 .info-affiche{
-                    margin-top: 27vh;
+                   margin-top: 10px;
                     width: 100%;
-                    height: 100%;
+                    height: 70vh;
                     border: 1px solid #0B0754;
                     border-radius: 10px;
                     display: flex;
@@ -1277,25 +1277,26 @@
     
     #affiche-body{
         width: 100vw;
-        height: auto;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
         justify-content: center;
         align-items: center;
             .bloc-affiche{
-                margin-top: 25vh;
-                margin-bottom: 25vh;
+                margin-top: 10vh;
+                margin-bottom: 10vh;
                 width: 90%;
-                height: 85vh;
+                height: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
                 .img-affiche{
                     width: 100%;
-                    height: 70%;
+                    height: 55vh;
                     margin-right: 0px;
+                    margin-bottom: 8vh;
                         .bloc-img{
                             width: 100%;
                             height: 80%;
@@ -1340,10 +1341,11 @@
                         }
                         .link{
                             width:100% ;
-                            height: 65%;
+                            height: 35vh;
                             margin-top: 10px;
                             border: 1px solid #0B0754;
                             border-radius: 10px;
+                            
                                 div{
                                     width: 85%;
                                     margin-left: auto;
@@ -1381,8 +1383,8 @@
                                         height: 1px;
                                         background-color: #0B0754;
                                         margin-right: 10px;
-                                        margin-bottom: 5%;
-                                        margin-top: 5%;
+                                        margin-bottom: 6%;
+                                        margin-top: 6%;
                                       
                                     }
                                    
@@ -1390,9 +1392,9 @@
                         }
                 }
                 .info-affiche{
-                    margin-top: 51%;
+                    margin-top: 20vh;
                     width: 100%;
-                    height: 100vh;
+                    height: 75vh;
                     border: 1px solid #0B0754;
                     border-radius: 10px;
                     display: flex;
@@ -1481,7 +1483,7 @@
                                 
                         }
                 }
-            }
+        }
             
     }
 }
@@ -1508,28 +1510,28 @@
     
     #affiche-body{
         width: 100vw;
-        height: auto;
+        height: 100%;
         margin-top: 30px;
         
         display: flex;
         justify-content: center;
         align-items: center;
             .bloc-affiche{
-                margin-top: 25vh;
-                margin-bottom: 25vh;
+                margin-top: 0vh;
+                margin-bottom: 0vh;
                 width: 90%;
-                height: 100vh;
+                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 .img-affiche{
                     width: 85%;
-                    height: 65%;
+                    height: 65vh;
                     margin-right: 0px;
                         .bloc-img{
                             width: 100%;
-                            height: 80%;
+                            height: 60%;
                             border: 1px solid #0B0754;
                             border-radius: 10px;
                             margin-bottom: 10px;
@@ -1571,7 +1573,7 @@
                         }
                         .link{
                             width:100% ;
-                            height: 65%;
+                            height: 55%;
                             margin-top: 10px;
                             border: 1px solid #0B0754;
                             border-radius: 10px;
@@ -1627,9 +1629,9 @@
                         }
                 }
                 .info-affiche{
-                    margin-top: 28vh;
+                    margin-top: 6vh;
                     width: 85%;
-                    height: 100%;
+                    height: 80vh;
                     border: 1px solid #0B0754;
                     border-radius: 10px;
                     display: flex;
