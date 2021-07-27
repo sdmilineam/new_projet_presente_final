@@ -5,25 +5,18 @@
 {% block body %}
 <section id="form">
     <div class="form-all">
-        <div class="form-grop">
-        
+        <div class="form-grop2">
+            <div class="label-mini">
                 {{ form_start(form)}}
-                
-                
-                  
-                  
-                  <div class="label">
                     {{ form_label(form.Nom) }}
                     {{ form_widget(form.Nom,{'attr':{'class':'form-control'}}) }}
                     {{ form_row(form.Prenom,{'attr':{'class':'form-control'}}) }}
-            
                     {{ form_row(form.Adresse,{'attr':{'class':'form-control'}}) }}
-               
                     {{ form_row(form.Contacte,{'attr':{'class':'form-control'}}) }} 
-                </div>   
                     {{ form_widget(form) }}
                     <input type="submit" value="Update" class="btn">
                     {{ form_end (form) }}
+            </div>        
         </div>           
     </div>
     

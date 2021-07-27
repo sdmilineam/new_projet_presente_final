@@ -6,8 +6,9 @@
 <section id="form">
     <div class="form-all">
         <div class="form-grop">
+            <div class="label2">
                 {{ form_start(form)}}
-            <div class="label">
+            
                 {{form_label(form.Titre) }}
               <span class="icon">{{ form_widget(form.Titre,{'attr':{'class':'form-control'}}) }}</span>  
                 <div>
@@ -41,7 +42,7 @@
                 <input type="submit" value="Update" class="btn btn-2">
                 {{ form_end (form) }}
 
-    </div>           
+         </div>           
     </div>
     
 </section>              
