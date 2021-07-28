@@ -23,7 +23,7 @@ class ProfilCrudController extends AbstractCrudController
             TextEditorField::new('description'),
             TextEditorField::new('NiveauEtude'),
             TextField::new('Link'),
-            ImageField::new('image')->setBasePath('/Uploads/image/')
+            ImageField::new('image')->setBasePath('Uploads/image/')
                 ->OnlyOnIndex(),
             TextField::new('imageFile')
                 ->setFormType(VichImageType::class)
