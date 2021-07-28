@@ -135,13 +135,16 @@
         margin-bottom: 10vh;
        
             #bloc_login{
-                width: 80%;
+                width: 63%;
                 height: 100%;
-                
-                margin-left: 35%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-left: 0%;
                 .login{
                     width: 50%;
-                    height:50%;
+                    height:39%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -161,7 +164,7 @@
                         }
                 }   
                 form{
-                    width: 50%;
+                    width: 49.8%;
                     height: 50%;
                     border: solid black 1px;
                     display: flex;
@@ -266,11 +269,13 @@
             #bloc_login{
                 width: 80%;
                 height: 100%;
-                
-                margin-left: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0%;
                 .login{
-                    width: 60%;
-                    height:46%;
+                    width: 55%;
+                    height:47%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -283,14 +288,14 @@
                             height: 35px;
                             font-size: 1em;
                             margin-bottom:20vh ;
-                            margin-left:62.5vh ;
+                            margin-left:66.7vh ;
                             background-color: #E8505B;
                             color: white;
                             border: none;
                         }
                 }   
                 form{
-                    width: 59.8%;
+                    width: 54.8%;
                     height: 50%;
                     border: solid black 1px;
                     display: flex;
