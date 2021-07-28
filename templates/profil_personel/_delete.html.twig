@@ -1,6 +1,7 @@
   
 <form action="{{path('app_delete_profil', {id:user.id})}}" method="POST">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="hidden" name="csrf_token" value="{{ csrf_token('delete' ~ user.id) }}">
+   {# argument de csrf_token() est une chaîne arbitraire utilisée pour générer le token #}
+    <input type="hidden" name="token" value="{{ csrf_token('delete' ~ user.id) }}">
     <input  class="btn-2 btn-1" type="submit" value="Supprimer">
 </form>
