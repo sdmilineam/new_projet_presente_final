@@ -20,8 +20,8 @@ class ProfilCrudController extends AbstractCrudController
     {
         return [
             TextField::new('Titre'),
-            TextEditorField::new('description'),
-            TextEditorField::new('NiveauEtude'),
+            TextField::new('description'),
+            TextField::new('NiveauEtude'),
             TextField::new('Link'),
             ImageField::new('image')->setBasePath('/Uploads/image/')
                 ->OnlyOnIndex(),
