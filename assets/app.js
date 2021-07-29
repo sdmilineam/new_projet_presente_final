@@ -13,4 +13,21 @@ import './bootstrap';
 
 
 
+// require jQuery normally
+const $ = require('./jquery.js');
+// create global $ and jQuery variables
+global.$ = global.jQuery = $;
 
+$("i").toggleClass("fa-bars").hide;
+$("i").toggleClass("fa-times").hide;
+
+
+$('#burger').on('click', function(){
+    $(".menu ").slideToggle();
+    $(".menu ").on('click', function(){
+        $("#menu ul").slideUp();
+        $("i").toggleClass("fa-bars").hide;
+        $("i").toggleClass("fa-times").show;
+    })
+
+})
